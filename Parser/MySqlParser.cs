@@ -898,16 +898,6 @@ public partial class MySqlParser : Parser {
 		}
 		public override int RuleIndex { get { return RULE_root; } }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterRoot(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitRoot(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
 			if (typedVisitor != null) return typedVisitor.VisitRoot(this);
@@ -986,16 +976,6 @@ public partial class MySqlParser : Parser {
 		{
 		}
 		public override int RuleIndex { get { return RULE_sqlStatements; } }
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterSqlStatements(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitSqlStatements(this);
-		}
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
@@ -1254,16 +1234,6 @@ public partial class MySqlParser : Parser {
 		}
 		public override int RuleIndex { get { return RULE_sqlStatement; } }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterSqlStatement(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitSqlStatement(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
 			if (typedVisitor != null) return typedVisitor.VisitSqlStatement(this);
@@ -1348,16 +1318,6 @@ public partial class MySqlParser : Parser {
 		{
 		}
 		public override int RuleIndex { get { return RULE_emptyStatement_; } }
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterEmptyStatement_(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitEmptyStatement_(this);
-		}
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
@@ -1499,16 +1459,6 @@ public partial class MySqlParser : Parser {
 		{
 		}
 		public override int RuleIndex { get { return RULE_ddlStatement; } }
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterDdlStatement(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitDdlStatement(this);
-		}
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
@@ -1820,16 +1770,6 @@ public partial class MySqlParser : Parser {
 		}
 		public override int RuleIndex { get { return RULE_dmlStatement; } }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterDmlStatement(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitDmlStatement(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
 			if (typedVisitor != null) return typedVisitor.VisitDmlStatement(this);
@@ -1961,16 +1901,6 @@ public partial class MySqlParser : Parser {
 		{
 		}
 		public override int RuleIndex { get { return RULE_transactionStatement; } }
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterTransactionStatement(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitTransactionStatement(this);
-		}
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
@@ -2114,16 +2044,6 @@ public partial class MySqlParser : Parser {
 		{
 		}
 		public override int RuleIndex { get { return RULE_replicationStatement; } }
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterReplicationStatement(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitReplicationStatement(this);
-		}
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
@@ -2274,16 +2194,6 @@ public partial class MySqlParser : Parser {
 		}
 		public override int RuleIndex { get { return RULE_preparedStatement; } }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterPreparedStatement(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitPreparedStatement(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
 			if (typedVisitor != null) return typedVisitor.VisitPreparedStatement(this);
@@ -2372,16 +2282,6 @@ public partial class MySqlParser : Parser {
 		{
 		}
 		public override int RuleIndex { get { return RULE_compoundStatement; } }
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterCompoundStatement(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitCompoundStatement(this);
-		}
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
@@ -2562,16 +2462,6 @@ public partial class MySqlParser : Parser {
 		{
 		}
 		public override int RuleIndex { get { return RULE_administrationStatement; } }
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterAdministrationStatement(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitAdministrationStatement(this);
-		}
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
@@ -2804,16 +2694,6 @@ public partial class MySqlParser : Parser {
 		}
 		public override int RuleIndex { get { return RULE_utilityStatement; } }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterUtilityStatement(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitUtilityStatement(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
 			if (typedVisitor != null) return typedVisitor.VisitUtilityStatement(this);
@@ -2913,16 +2793,6 @@ public partial class MySqlParser : Parser {
 		{
 		}
 		public override int RuleIndex { get { return RULE_createDatabase; } }
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterCreateDatabase(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitCreateDatabase(this);
-		}
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
@@ -3027,16 +2897,6 @@ public partial class MySqlParser : Parser {
 		{
 		}
 		public override int RuleIndex { get { return RULE_createEvent; } }
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterCreateEvent(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitCreateEvent(this);
-		}
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
@@ -3238,16 +3098,6 @@ public partial class MySqlParser : Parser {
 		{
 		}
 		public override int RuleIndex { get { return RULE_createIndex; } }
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterCreateIndex(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitCreateIndex(this);
-		}
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
@@ -3584,16 +3434,6 @@ public partial class MySqlParser : Parser {
 		}
 		public override int RuleIndex { get { return RULE_createLogfileGroup; } }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterCreateLogfileGroup(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitCreateLogfileGroup(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
 			if (typedVisitor != null) return typedVisitor.VisitCreateLogfileGroup(this);
@@ -3806,16 +3646,6 @@ public partial class MySqlParser : Parser {
 		}
 		public override int RuleIndex { get { return RULE_createProcedure; } }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterCreateProcedure(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitCreateProcedure(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
 			if (typedVisitor != null) return typedVisitor.VisitCreateProcedure(this);
@@ -3951,16 +3781,6 @@ public partial class MySqlParser : Parser {
 		{
 		}
 		public override int RuleIndex { get { return RULE_createFunction; } }
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterCreateFunction(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitCreateFunction(this);
-		}
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
@@ -4957,16 +4777,6 @@ public partial class MySqlParser : Parser {
 		}
 		public override int RuleIndex { get { return RULE_createServer; } }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterCreateServer(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitCreateServer(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
 			if (typedVisitor != null) return typedVisitor.VisitCreateServer(this);
@@ -5074,16 +4884,6 @@ public partial class MySqlParser : Parser {
 		}
 		public CopyCreateTableContext(CreateTableContext context) { CopyFrom(context); }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterCopyCreateTable(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitCopyCreateTable(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
 			if (typedVisitor != null) return typedVisitor.VisitCopyCreateTable(this);
@@ -5119,16 +4919,6 @@ public partial class MySqlParser : Parser {
 			return GetToken(MySqlParser.COMMA, i);
 		}
 		public ColumnCreateTableContext(CreateTableContext context) { CopyFrom(context); }
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterColumnCreateTable(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitColumnCreateTable(this);
-		}
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
@@ -5174,16 +4964,6 @@ public partial class MySqlParser : Parser {
 			return GetToken(MySqlParser.COMMA, i);
 		}
 		public QueryCreateTableContext(CreateTableContext context) { CopyFrom(context); }
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterQueryCreateTable(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitQueryCreateTable(this);
-		}
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
@@ -5534,16 +5314,6 @@ public partial class MySqlParser : Parser {
 		}
 		public override int RuleIndex { get { return RULE_createTablespaceInnodb; } }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterCreateTablespaceInnodb(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitCreateTablespaceInnodb(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
 			if (typedVisitor != null) return typedVisitor.VisitCreateTablespaceInnodb(this);
@@ -5670,16 +5440,6 @@ public partial class MySqlParser : Parser {
 		{
 		}
 		public override int RuleIndex { get { return RULE_createTablespaceNdb; } }
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterCreateTablespaceNdb(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitCreateTablespaceNdb(this);
-		}
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
@@ -5927,16 +5687,6 @@ public partial class MySqlParser : Parser {
 		}
 		public override int RuleIndex { get { return RULE_createTrigger; } }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterCreateTrigger(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitCreateTrigger(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
 			if (typedVisitor != null) return typedVisitor.VisitCreateTrigger(this);
@@ -6057,16 +5807,6 @@ public partial class MySqlParser : Parser {
 		}
 		public override int RuleIndex { get { return RULE_withClause; } }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterWithClause(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitWithClause(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
 			if (typedVisitor != null) return typedVisitor.VisitWithClause(this);
@@ -6142,16 +5882,6 @@ public partial class MySqlParser : Parser {
 		{
 		}
 		public override int RuleIndex { get { return RULE_commonTableExpressions; } }
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterCommonTableExpressions(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitCommonTableExpressions(this);
-		}
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
@@ -6243,16 +5973,6 @@ public partial class MySqlParser : Parser {
 		}
 		public override int RuleIndex { get { return RULE_cteName; } }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterCteName(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitCteName(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
 			if (typedVisitor != null) return typedVisitor.VisitCteName(this);
@@ -6291,16 +6011,6 @@ public partial class MySqlParser : Parser {
 		{
 		}
 		public override int RuleIndex { get { return RULE_cteColumnName; } }
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterCteColumnName(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitCteColumnName(this);
-		}
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
@@ -6376,16 +6086,6 @@ public partial class MySqlParser : Parser {
 		{
 		}
 		public override int RuleIndex { get { return RULE_createView; } }
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterCreateView(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitCreateView(this);
-		}
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
@@ -6569,16 +6269,6 @@ public partial class MySqlParser : Parser {
 		}
 		public override int RuleIndex { get { return RULE_createDatabaseOption; } }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterCreateDatabaseOption(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitCreateDatabaseOption(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
 			if (typedVisitor != null) return typedVisitor.VisitCreateDatabaseOption(this);
@@ -6736,16 +6426,6 @@ public partial class MySqlParser : Parser {
 		}
 		public override int RuleIndex { get { return RULE_charSet; } }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterCharSet(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitCharSet(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
 			if (typedVisitor != null) return typedVisitor.VisitCharSet(this);
@@ -6815,16 +6495,6 @@ public partial class MySqlParser : Parser {
 		{
 		}
 		public override int RuleIndex { get { return RULE_ownerStatement; } }
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterOwnerStatement(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitOwnerStatement(this);
-		}
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
@@ -6916,16 +6586,6 @@ public partial class MySqlParser : Parser {
 		}
 		public PreciseScheduleContext(ScheduleExpressionContext context) { CopyFrom(context); }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterPreciseSchedule(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitPreciseSchedule(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
 			if (typedVisitor != null) return typedVisitor.VisitPreciseSchedule(this);
@@ -6963,16 +6623,6 @@ public partial class MySqlParser : Parser {
 			return GetRuleContext<IntervalExprContext>(i);
 		}
 		public IntervalScheduleContext(ScheduleExpressionContext context) { CopyFrom(context); }
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterIntervalSchedule(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitIntervalSchedule(this);
-		}
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
@@ -7126,16 +6776,6 @@ public partial class MySqlParser : Parser {
 		}
 		public override int RuleIndex { get { return RULE_timestampValue; } }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterTimestampValue(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitTimestampValue(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
 			if (typedVisitor != null) return typedVisitor.VisitTimestampValue(this);
@@ -7210,16 +6850,6 @@ public partial class MySqlParser : Parser {
 		}
 		public override int RuleIndex { get { return RULE_intervalExpr; } }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterIntervalExpr(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitIntervalExpr(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
 			if (typedVisitor != null) return typedVisitor.VisitIntervalExpr(this);
@@ -7290,16 +6920,6 @@ public partial class MySqlParser : Parser {
 		{
 		}
 		public override int RuleIndex { get { return RULE_intervalType; } }
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterIntervalType(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitIntervalType(this);
-		}
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
@@ -7440,16 +7060,6 @@ public partial class MySqlParser : Parser {
 		}
 		public override int RuleIndex { get { return RULE_enableType; } }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterEnableType(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitEnableType(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
 			if (typedVisitor != null) return typedVisitor.VisitEnableType(this);
@@ -7513,16 +7123,6 @@ public partial class MySqlParser : Parser {
 		{
 		}
 		public override int RuleIndex { get { return RULE_indexType; } }
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterIndexType(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitIndexType(this);
-		}
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
@@ -7593,16 +7193,6 @@ public partial class MySqlParser : Parser {
 		{
 		}
 		public override int RuleIndex { get { return RULE_indexOption; } }
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterIndexOption(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitIndexOption(this);
-		}
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
@@ -7795,16 +7385,6 @@ public partial class MySqlParser : Parser {
 		}
 		public override int RuleIndex { get { return RULE_procedureParameter; } }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterProcedureParameter(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitProcedureParameter(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
 			if (typedVisitor != null) return typedVisitor.VisitProcedureParameter(this);
@@ -7868,16 +7448,6 @@ public partial class MySqlParser : Parser {
 		}
 		public override int RuleIndex { get { return RULE_functionParameter; } }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterFunctionParameter(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitFunctionParameter(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
 			if (typedVisitor != null) return typedVisitor.VisitFunctionParameter(this);
@@ -7926,16 +7496,6 @@ public partial class MySqlParser : Parser {
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode NOT() { return GetToken(MySqlParser.NOT, 0); }
 		public RoutineBehaviorContext(RoutineOptionContext context) { CopyFrom(context); }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterRoutineBehavior(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitRoutineBehavior(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
 			if (typedVisitor != null) return typedVisitor.VisitRoutineBehavior(this);
@@ -7947,16 +7507,6 @@ public partial class MySqlParser : Parser {
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode SQL() { return GetToken(MySqlParser.SQL, 0); }
 		public RoutineLanguageContext(RoutineOptionContext context) { CopyFrom(context); }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterRoutineLanguage(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitRoutineLanguage(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
 			if (typedVisitor != null) return typedVisitor.VisitRoutineLanguage(this);
@@ -7967,16 +7517,6 @@ public partial class MySqlParser : Parser {
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode COMMENT() { return GetToken(MySqlParser.COMMENT, 0); }
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode STRING_LITERAL() { return GetToken(MySqlParser.STRING_LITERAL, 0); }
 		public RoutineCommentContext(RoutineOptionContext context) { CopyFrom(context); }
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterRoutineComment(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitRoutineComment(this);
-		}
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
@@ -7992,16 +7532,6 @@ public partial class MySqlParser : Parser {
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode INVOKER() { return GetToken(MySqlParser.INVOKER, 0); }
 		public RoutineSecurityContext(RoutineOptionContext context) { CopyFrom(context); }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterRoutineSecurity(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitRoutineSecurity(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
 			if (typedVisitor != null) return typedVisitor.VisitRoutineSecurity(this);
@@ -8016,16 +7546,6 @@ public partial class MySqlParser : Parser {
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode DATA() { return GetToken(MySqlParser.DATA, 0); }
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode MODIFIES() { return GetToken(MySqlParser.MODIFIES, 0); }
 		public RoutineDataContext(RoutineOptionContext context) { CopyFrom(context); }
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterRoutineData(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitRoutineData(this);
-		}
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
@@ -8186,16 +7706,6 @@ public partial class MySqlParser : Parser {
 		}
 		public override int RuleIndex { get { return RULE_serverOption; } }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterServerOption(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitServerOption(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
 			if (typedVisitor != null) return typedVisitor.VisitServerOption(this);
@@ -8308,16 +7818,6 @@ public partial class MySqlParser : Parser {
 		}
 		public override int RuleIndex { get { return RULE_createDefinitions; } }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterCreateDefinitions(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitCreateDefinitions(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
 			if (typedVisitor != null) return typedVisitor.VisitCreateDefinitions(this);
@@ -8389,16 +7889,6 @@ public partial class MySqlParser : Parser {
 		}
 		public ColumnDeclarationContext(CreateDefinitionContext context) { CopyFrom(context); }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterColumnDeclaration(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitColumnDeclaration(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
 			if (typedVisitor != null) return typedVisitor.VisitColumnDeclaration(this);
@@ -8411,16 +7901,6 @@ public partial class MySqlParser : Parser {
 		}
 		public ConstraintDeclarationContext(CreateDefinitionContext context) { CopyFrom(context); }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterConstraintDeclaration(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitConstraintDeclaration(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
 			if (typedVisitor != null) return typedVisitor.VisitConstraintDeclaration(this);
@@ -8432,16 +7912,6 @@ public partial class MySqlParser : Parser {
 			return GetRuleContext<IndexColumnDefinitionContext>(0);
 		}
 		public IndexDeclarationContext(CreateDefinitionContext context) { CopyFrom(context); }
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterIndexDeclaration(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitIndexDeclaration(this);
-		}
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
@@ -9341,16 +8811,6 @@ public partial class MySqlParser : Parser {
 		}
 		public override int RuleIndex { get { return RULE_columnDefinition; } }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterColumnDefinition(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitColumnDefinition(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
 			if (typedVisitor != null) return typedVisitor.VisitColumnDefinition(this);
@@ -9417,16 +8877,6 @@ public partial class MySqlParser : Parser {
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode DEFAULT() { return GetToken(MySqlParser.DEFAULT, 0); }
 		public StorageColumnConstraintContext(ColumnConstraintContext context) { CopyFrom(context); }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterStorageColumnConstraint(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitStorageColumnConstraint(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
 			if (typedVisitor != null) return typedVisitor.VisitStorageColumnConstraint(this);
@@ -9437,16 +8887,6 @@ public partial class MySqlParser : Parser {
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode VISIBLE() { return GetToken(MySqlParser.VISIBLE, 0); }
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode INVISIBLE() { return GetToken(MySqlParser.INVISIBLE, 0); }
 		public VisibilityColumnConstraintContext(ColumnConstraintContext context) { CopyFrom(context); }
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterVisibilityColumnConstraint(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitVisibilityColumnConstraint(this);
-		}
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
@@ -9463,16 +8903,6 @@ public partial class MySqlParser : Parser {
 		}
 		public AutoIncrementColumnConstraintContext(ColumnConstraintContext context) { CopyFrom(context); }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterAutoIncrementColumnConstraint(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitAutoIncrementColumnConstraint(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
 			if (typedVisitor != null) return typedVisitor.VisitAutoIncrementColumnConstraint(this);
@@ -9483,16 +8913,6 @@ public partial class MySqlParser : Parser {
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode COMMENT() { return GetToken(MySqlParser.COMMENT, 0); }
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode STRING_LITERAL() { return GetToken(MySqlParser.STRING_LITERAL, 0); }
 		public CommentColumnConstraintContext(ColumnConstraintContext context) { CopyFrom(context); }
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterCommentColumnConstraint(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitCommentColumnConstraint(this);
-		}
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
@@ -9505,16 +8925,6 @@ public partial class MySqlParser : Parser {
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode KEY() { return GetToken(MySqlParser.KEY, 0); }
 		public UniqueKeyColumnConstraintContext(ColumnConstraintContext context) { CopyFrom(context); }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterUniqueKeyColumnConstraint(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitUniqueKeyColumnConstraint(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
 			if (typedVisitor != null) return typedVisitor.VisitUniqueKeyColumnConstraint(this);
@@ -9526,16 +8936,6 @@ public partial class MySqlParser : Parser {
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode DEFAULT() { return GetToken(MySqlParser.DEFAULT, 0); }
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode VALUE() { return GetToken(MySqlParser.VALUE, 0); }
 		public SerialDefaultColumnConstraintContext(ColumnConstraintContext context) { CopyFrom(context); }
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterSerialDefaultColumnConstraint(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitSerialDefaultColumnConstraint(this);
-		}
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
@@ -9556,16 +8956,6 @@ public partial class MySqlParser : Parser {
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode STORED() { return GetToken(MySqlParser.STORED, 0); }
 		public GeneratedColumnConstraintContext(ColumnConstraintContext context) { CopyFrom(context); }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterGeneratedColumnConstraint(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitGeneratedColumnConstraint(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
 			if (typedVisitor != null) return typedVisitor.VisitGeneratedColumnConstraint(this);
@@ -9580,16 +8970,6 @@ public partial class MySqlParser : Parser {
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode DEFAULT() { return GetToken(MySqlParser.DEFAULT, 0); }
 		public FormatColumnConstraintContext(ColumnConstraintContext context) { CopyFrom(context); }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterFormatColumnConstraint(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitFormatColumnConstraint(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
 			if (typedVisitor != null) return typedVisitor.VisitFormatColumnConstraint(this);
@@ -9603,16 +8983,6 @@ public partial class MySqlParser : Parser {
 		}
 		public CollateColumnConstraintContext(ColumnConstraintContext context) { CopyFrom(context); }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterCollateColumnConstraint(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitCollateColumnConstraint(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
 			if (typedVisitor != null) return typedVisitor.VisitCollateColumnConstraint(this);
@@ -9623,16 +8993,6 @@ public partial class MySqlParser : Parser {
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode KEY() { return GetToken(MySqlParser.KEY, 0); }
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode PRIMARY() { return GetToken(MySqlParser.PRIMARY, 0); }
 		public PrimaryKeyColumnConstraintContext(ColumnConstraintContext context) { CopyFrom(context); }
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterPrimaryKeyColumnConstraint(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitPrimaryKeyColumnConstraint(this);
-		}
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
@@ -9654,16 +9014,6 @@ public partial class MySqlParser : Parser {
 		}
 		public CheckColumnConstraintContext(ColumnConstraintContext context) { CopyFrom(context); }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterCheckColumnConstraint(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitCheckColumnConstraint(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
 			if (typedVisitor != null) return typedVisitor.VisitCheckColumnConstraint(this);
@@ -9675,16 +9025,6 @@ public partial class MySqlParser : Parser {
 			return GetRuleContext<NullNotnullContext>(0);
 		}
 		public NullColumnConstraintContext(ColumnConstraintContext context) { CopyFrom(context); }
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterNullColumnConstraint(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitNullColumnConstraint(this);
-		}
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
@@ -9699,16 +9039,6 @@ public partial class MySqlParser : Parser {
 		}
 		public DefaultColumnConstraintContext(ColumnConstraintContext context) { CopyFrom(context); }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterDefaultColumnConstraint(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitDefaultColumnConstraint(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
 			if (typedVisitor != null) return typedVisitor.VisitDefaultColumnConstraint(this);
@@ -9720,16 +9050,6 @@ public partial class MySqlParser : Parser {
 			return GetRuleContext<ReferenceDefinitionContext>(0);
 		}
 		public ReferenceColumnConstraintContext(ColumnConstraintContext context) { CopyFrom(context); }
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterReferenceColumnConstraint(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitReferenceColumnConstraint(this);
-		}
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
@@ -10059,16 +9379,6 @@ public partial class MySqlParser : Parser {
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode KEY() { return GetToken(MySqlParser.KEY, 0); }
 		public UniqueKeyTableConstraintContext(TableConstraintContext context) { CopyFrom(context); }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterUniqueKeyTableConstraint(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitUniqueKeyTableConstraint(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
 			if (typedVisitor != null) return typedVisitor.VisitUniqueKeyTableConstraint(this);
@@ -10088,16 +9398,6 @@ public partial class MySqlParser : Parser {
 			return GetRuleContext<UidContext>(0);
 		}
 		public CheckTableConstraintContext(TableConstraintContext context) { CopyFrom(context); }
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterCheckTableConstraint(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitCheckTableConstraint(this);
-		}
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
@@ -10131,16 +9431,6 @@ public partial class MySqlParser : Parser {
 		}
 		public PrimaryKeyTableConstraintContext(TableConstraintContext context) { CopyFrom(context); }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterPrimaryKeyTableConstraint(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitPrimaryKeyTableConstraint(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
 			if (typedVisitor != null) return typedVisitor.VisitPrimaryKeyTableConstraint(this);
@@ -10166,16 +9456,6 @@ public partial class MySqlParser : Parser {
 			return GetRuleContext<UidContext>(i);
 		}
 		public ForeignKeyTableConstraintContext(TableConstraintContext context) { CopyFrom(context); }
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterForeignKeyTableConstraint(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitForeignKeyTableConstraint(this);
-		}
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
@@ -10454,16 +9734,6 @@ public partial class MySqlParser : Parser {
 		}
 		public override int RuleIndex { get { return RULE_referenceDefinition; } }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterReferenceDefinition(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitReferenceDefinition(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
 			if (typedVisitor != null) return typedVisitor.VisitReferenceDefinition(this);
@@ -10557,16 +9827,6 @@ public partial class MySqlParser : Parser {
 		}
 		public override int RuleIndex { get { return RULE_referenceAction; } }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterReferenceAction(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitReferenceAction(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
 			if (typedVisitor != null) return typedVisitor.VisitReferenceAction(this);
@@ -10657,16 +9917,6 @@ public partial class MySqlParser : Parser {
 		{
 		}
 		public override int RuleIndex { get { return RULE_referenceControlType; } }
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterReferenceControlType(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitReferenceControlType(this);
-		}
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
@@ -10762,16 +10012,6 @@ public partial class MySqlParser : Parser {
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode KEY() { return GetToken(MySqlParser.KEY, 0); }
 		public SpecialIndexDeclarationContext(IndexColumnDefinitionContext context) { CopyFrom(context); }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterSpecialIndexDeclaration(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitSpecialIndexDeclaration(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
 			if (typedVisitor != null) return typedVisitor.VisitSpecialIndexDeclaration(this);
@@ -10798,16 +10038,6 @@ public partial class MySqlParser : Parser {
 			return GetRuleContext<IndexOptionContext>(i);
 		}
 		public SimpleIndexDeclarationContext(IndexColumnDefinitionContext context) { CopyFrom(context); }
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterSimpleIndexDeclaration(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitSimpleIndexDeclaration(this);
-		}
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
@@ -10973,16 +10203,6 @@ public partial class MySqlParser : Parser {
 		}
 		public TableOptionEngineContext(TableOptionContext context) { CopyFrom(context); }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterTableOptionEngine(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitTableOptionEngine(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
 			if (typedVisitor != null) return typedVisitor.VisitTableOptionEngine(this);
@@ -10996,16 +10216,6 @@ public partial class MySqlParser : Parser {
 		}
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode EQUAL_SYMBOL() { return GetToken(MySqlParser.EQUAL_SYMBOL, 0); }
 		public TableOptionMaxRowsContext(TableOptionContext context) { CopyFrom(context); }
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterTableOptionMaxRows(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitTableOptionMaxRows(this);
-		}
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
@@ -11022,16 +10232,6 @@ public partial class MySqlParser : Parser {
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode EQUAL_SYMBOL() { return GetToken(MySqlParser.EQUAL_SYMBOL, 0); }
 		public TableOptionCollateContext(TableOptionContext context) { CopyFrom(context); }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterTableOptionCollate(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitTableOptionCollate(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
 			if (typedVisitor != null) return typedVisitor.VisitTableOptionCollate(this);
@@ -11046,16 +10246,6 @@ public partial class MySqlParser : Parser {
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode ONE_DECIMAL() { return GetToken(MySqlParser.ONE_DECIMAL, 0); }
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode EQUAL_SYMBOL() { return GetToken(MySqlParser.EQUAL_SYMBOL, 0); }
 		public TableOptionPersistentContext(TableOptionContext context) { CopyFrom(context); }
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterTableOptionPersistent(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitTableOptionPersistent(this);
-		}
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
@@ -11073,16 +10263,6 @@ public partial class MySqlParser : Parser {
 		}
 		public TableOptionTablespaceContext(TableOptionContext context) { CopyFrom(context); }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterTableOptionTablespace(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitTableOptionTablespace(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
 			if (typedVisitor != null) return typedVisitor.VisitTableOptionTablespace(this);
@@ -11098,16 +10278,6 @@ public partial class MySqlParser : Parser {
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode EQUAL_SYMBOL() { return GetToken(MySqlParser.EQUAL_SYMBOL, 0); }
 		public TableOptionPackKeysContext(TableOptionContext context) { CopyFrom(context); }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterTableOptionPackKeys(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitTableOptionPackKeys(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
 			if (typedVisitor != null) return typedVisitor.VisitTableOptionPackKeys(this);
@@ -11119,16 +10289,6 @@ public partial class MySqlParser : Parser {
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode STRING_LITERAL() { return GetToken(MySqlParser.STRING_LITERAL, 0); }
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode EQUAL_SYMBOL() { return GetToken(MySqlParser.EQUAL_SYMBOL, 0); }
 		public TableOptionPasswordContext(TableOptionContext context) { CopyFrom(context); }
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterTableOptionPassword(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitTableOptionPassword(this);
-		}
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
@@ -11146,16 +10306,6 @@ public partial class MySqlParser : Parser {
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode EQUAL_SYMBOL() { return GetToken(MySqlParser.EQUAL_SYMBOL, 0); }
 		public TableOptionUnionContext(TableOptionContext context) { CopyFrom(context); }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterTableOptionUnion(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitTableOptionUnion(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
 			if (typedVisitor != null) return typedVisitor.VisitTableOptionUnion(this);
@@ -11169,16 +10319,6 @@ public partial class MySqlParser : Parser {
 		}
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode EQUAL_SYMBOL() { return GetToken(MySqlParser.EQUAL_SYMBOL, 0); }
 		public TableOptionSamplePageContext(TableOptionContext context) { CopyFrom(context); }
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterTableOptionSamplePage(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitTableOptionSamplePage(this);
-		}
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
@@ -11200,16 +10340,6 @@ public partial class MySqlParser : Parser {
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode EQUAL_SYMBOL() { return GetToken(MySqlParser.EQUAL_SYMBOL, 0); }
 		public TableOptionCharsetContext(TableOptionContext context) { CopyFrom(context); }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterTableOptionCharset(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitTableOptionCharset(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
 			if (typedVisitor != null) return typedVisitor.VisitTableOptionCharset(this);
@@ -11222,16 +10352,6 @@ public partial class MySqlParser : Parser {
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode STRING_LITERAL() { return GetToken(MySqlParser.STRING_LITERAL, 0); }
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode EQUAL_SYMBOL() { return GetToken(MySqlParser.EQUAL_SYMBOL, 0); }
 		public TableOptionIndexDirectoryContext(TableOptionContext context) { CopyFrom(context); }
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterTableOptionIndexDirectory(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitTableOptionIndexDirectory(this);
-		}
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
@@ -11247,16 +10367,6 @@ public partial class MySqlParser : Parser {
 		}
 		public TableOptionTableTypeContext(TableOptionContext context) { CopyFrom(context); }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterTableOptionTableType(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitTableOptionTableType(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
 			if (typedVisitor != null) return typedVisitor.VisitTableOptionTableType(this);
@@ -11271,16 +10381,6 @@ public partial class MySqlParser : Parser {
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode EQUAL_SYMBOL() { return GetToken(MySqlParser.EQUAL_SYMBOL, 0); }
 		public TableOptionKeyBlockSizeContext(TableOptionContext context) { CopyFrom(context); }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterTableOptionKeyBlockSize(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitTableOptionKeyBlockSize(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
 			if (typedVisitor != null) return typedVisitor.VisitTableOptionKeyBlockSize(this);
@@ -11292,16 +10392,6 @@ public partial class MySqlParser : Parser {
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode STRING_LITERAL() { return GetToken(MySqlParser.STRING_LITERAL, 0); }
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode EQUAL_SYMBOL() { return GetToken(MySqlParser.EQUAL_SYMBOL, 0); }
 		public TableOptionEncryptionContext(TableOptionContext context) { CopyFrom(context); }
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterTableOptionEncryption(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitTableOptionEncryption(this);
-		}
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
@@ -11315,16 +10405,6 @@ public partial class MySqlParser : Parser {
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode STRING_LITERAL() { return GetToken(MySqlParser.STRING_LITERAL, 0); }
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode EQUAL_SYMBOL() { return GetToken(MySqlParser.EQUAL_SYMBOL, 0); }
 		public TableOptionDataDirectoryContext(TableOptionContext context) { CopyFrom(context); }
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterTableOptionDataDirectory(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitTableOptionDataDirectory(this);
-		}
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
@@ -11341,16 +10421,6 @@ public partial class MySqlParser : Parser {
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode EQUAL_SYMBOL() { return GetToken(MySqlParser.EQUAL_SYMBOL, 0); }
 		public TableOptionRecalculationContext(TableOptionContext context) { CopyFrom(context); }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterTableOptionRecalculation(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitTableOptionRecalculation(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
 			if (typedVisitor != null) return typedVisitor.VisitTableOptionRecalculation(this);
@@ -11364,16 +10434,6 @@ public partial class MySqlParser : Parser {
 		}
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode EQUAL_SYMBOL() { return GetToken(MySqlParser.EQUAL_SYMBOL, 0); }
 		public TableOptionAutoIncrementContext(TableOptionContext context) { CopyFrom(context); }
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterTableOptionAutoIncrement(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitTableOptionAutoIncrement(this);
-		}
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
@@ -11390,16 +10450,6 @@ public partial class MySqlParser : Parser {
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode EQUAL_SYMBOL() { return GetToken(MySqlParser.EQUAL_SYMBOL, 0); }
 		public TableOptionChecksumContext(TableOptionContext context) { CopyFrom(context); }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterTableOptionChecksum(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitTableOptionChecksum(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
 			if (typedVisitor != null) return typedVisitor.VisitTableOptionChecksum(this);
@@ -11414,16 +10464,6 @@ public partial class MySqlParser : Parser {
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode EQUAL_SYMBOL() { return GetToken(MySqlParser.EQUAL_SYMBOL, 0); }
 		public TableOptionDelayContext(TableOptionContext context) { CopyFrom(context); }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterTableOptionDelay(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitTableOptionDelay(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
 			if (typedVisitor != null) return typedVisitor.VisitTableOptionDelay(this);
@@ -11436,16 +10476,6 @@ public partial class MySqlParser : Parser {
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode EQUAL_SYMBOL() { return GetToken(MySqlParser.EQUAL_SYMBOL, 0); }
 		public TableOptionConnectionContext(TableOptionContext context) { CopyFrom(context); }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterTableOptionConnection(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitTableOptionConnection(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
 			if (typedVisitor != null) return typedVisitor.VisitTableOptionConnection(this);
@@ -11457,16 +10487,6 @@ public partial class MySqlParser : Parser {
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode STRING_LITERAL() { return GetToken(MySqlParser.STRING_LITERAL, 0); }
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode EQUAL_SYMBOL() { return GetToken(MySqlParser.EQUAL_SYMBOL, 0); }
 		public TableOptionCommentContext(TableOptionContext context) { CopyFrom(context); }
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterTableOptionComment(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitTableOptionComment(this);
-		}
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
@@ -11481,16 +10501,6 @@ public partial class MySqlParser : Parser {
 		}
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode EQUAL_SYMBOL() { return GetToken(MySqlParser.EQUAL_SYMBOL, 0); }
 		public TableOptionAverageContext(TableOptionContext context) { CopyFrom(context); }
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterTableOptionAverage(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitTableOptionAverage(this);
-		}
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
@@ -11511,16 +10521,6 @@ public partial class MySqlParser : Parser {
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode EQUAL_SYMBOL() { return GetToken(MySqlParser.EQUAL_SYMBOL, 0); }
 		public TableOptionRowFormatContext(TableOptionContext context) { CopyFrom(context); }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterTableOptionRowFormat(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitTableOptionRowFormat(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
 			if (typedVisitor != null) return typedVisitor.VisitTableOptionRowFormat(this);
@@ -11533,16 +10533,6 @@ public partial class MySqlParser : Parser {
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode ID() { return GetToken(MySqlParser.ID, 0); }
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode EQUAL_SYMBOL() { return GetToken(MySqlParser.EQUAL_SYMBOL, 0); }
 		public TableOptionCompressionContext(TableOptionContext context) { CopyFrom(context); }
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterTableOptionCompression(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitTableOptionCompression(this);
-		}
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
@@ -11559,16 +10549,6 @@ public partial class MySqlParser : Parser {
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode EQUAL_SYMBOL() { return GetToken(MySqlParser.EQUAL_SYMBOL, 0); }
 		public TableOptionInsertMethodContext(TableOptionContext context) { CopyFrom(context); }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterTableOptionInsertMethod(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitTableOptionInsertMethod(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
 			if (typedVisitor != null) return typedVisitor.VisitTableOptionInsertMethod(this);
@@ -11582,16 +10562,6 @@ public partial class MySqlParser : Parser {
 		}
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode EQUAL_SYMBOL() { return GetToken(MySqlParser.EQUAL_SYMBOL, 0); }
 		public TableOptionMinRowsContext(TableOptionContext context) { CopyFrom(context); }
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterTableOptionMinRows(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitTableOptionMinRows(this);
-		}
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
@@ -12316,16 +11286,6 @@ public partial class MySqlParser : Parser {
 		}
 		public override int RuleIndex { get { return RULE_tableType; } }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterTableType(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitTableType(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
 			if (typedVisitor != null) return typedVisitor.VisitTableType(this);
@@ -12373,16 +11333,6 @@ public partial class MySqlParser : Parser {
 		{
 		}
 		public override int RuleIndex { get { return RULE_tablespaceStorage; } }
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterTablespaceStorage(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitTablespaceStorage(this);
-		}
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
@@ -12463,16 +11413,6 @@ public partial class MySqlParser : Parser {
 		{
 		}
 		public override int RuleIndex { get { return RULE_partitionDefinitions; } }
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterPartitionDefinitions(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitPartitionDefinitions(this);
-		}
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
@@ -12603,16 +11543,6 @@ public partial class MySqlParser : Parser {
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode TWO_DECIMAL() { return GetToken(MySqlParser.TWO_DECIMAL, 0); }
 		public PartitionFunctionKeyContext(PartitionFunctionDefinitionContext context) { CopyFrom(context); }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterPartitionFunctionKey(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitPartitionFunctionKey(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
 			if (typedVisitor != null) return typedVisitor.VisitPartitionFunctionKey(this);
@@ -12628,16 +11558,6 @@ public partial class MySqlParser : Parser {
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode RR_BRACKET() { return GetToken(MySqlParser.RR_BRACKET, 0); }
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode LINEAR() { return GetToken(MySqlParser.LINEAR, 0); }
 		public PartitionFunctionHashContext(PartitionFunctionDefinitionContext context) { CopyFrom(context); }
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterPartitionFunctionHash(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitPartitionFunctionHash(this);
-		}
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
@@ -12658,16 +11578,6 @@ public partial class MySqlParser : Parser {
 		}
 		public PartitionFunctionListContext(PartitionFunctionDefinitionContext context) { CopyFrom(context); }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterPartitionFunctionList(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitPartitionFunctionList(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
 			if (typedVisitor != null) return typedVisitor.VisitPartitionFunctionList(this);
@@ -12686,16 +11596,6 @@ public partial class MySqlParser : Parser {
 			return GetRuleContext<UidListContext>(0);
 		}
 		public PartitionFunctionRangeContext(PartitionFunctionDefinitionContext context) { CopyFrom(context); }
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterPartitionFunctionRange(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitPartitionFunctionRange(this);
-		}
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
@@ -12890,16 +11790,6 @@ public partial class MySqlParser : Parser {
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode LINEAR() { return GetToken(MySqlParser.LINEAR, 0); }
 		public SubPartitionFunctionHashContext(SubpartitionFunctionDefinitionContext context) { CopyFrom(context); }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterSubPartitionFunctionHash(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitSubPartitionFunctionHash(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
 			if (typedVisitor != null) return typedVisitor.VisitSubPartitionFunctionHash(this);
@@ -12920,16 +11810,6 @@ public partial class MySqlParser : Parser {
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode ONE_DECIMAL() { return GetToken(MySqlParser.ONE_DECIMAL, 0); }
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode TWO_DECIMAL() { return GetToken(MySqlParser.TWO_DECIMAL, 0); }
 		public SubPartitionFunctionKeyContext(SubpartitionFunctionDefinitionContext context) { CopyFrom(context); }
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterSubPartitionFunctionKey(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitSubPartitionFunctionKey(this);
-		}
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
@@ -13082,16 +11962,6 @@ public partial class MySqlParser : Parser {
 		}
 		public PartitionComparisonContext(PartitionDefinitionContext context) { CopyFrom(context); }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterPartitionComparison(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitPartitionComparison(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
 			if (typedVisitor != null) return typedVisitor.VisitPartitionComparison(this);
@@ -13136,16 +12006,6 @@ public partial class MySqlParser : Parser {
 			return GetRuleContext<SubpartitionDefinitionContext>(i);
 		}
 		public PartitionListAtomContext(PartitionDefinitionContext context) { CopyFrom(context); }
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterPartitionListAtom(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitPartitionListAtom(this);
-		}
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
@@ -13192,16 +12052,6 @@ public partial class MySqlParser : Parser {
 		}
 		public PartitionListVectorContext(PartitionDefinitionContext context) { CopyFrom(context); }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterPartitionListVector(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitPartitionListVector(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
 			if (typedVisitor != null) return typedVisitor.VisitPartitionListVector(this);
@@ -13232,16 +12082,6 @@ public partial class MySqlParser : Parser {
 			return GetToken(MySqlParser.COMMA, i);
 		}
 		public PartitionSimpleContext(PartitionDefinitionContext context) { CopyFrom(context); }
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterPartitionSimple(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitPartitionSimple(this);
-		}
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
@@ -13644,16 +12484,6 @@ public partial class MySqlParser : Parser {
 		}
 		public override int RuleIndex { get { return RULE_partitionDefinerAtom; } }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterPartitionDefinerAtom(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitPartitionDefinerAtom(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
 			if (typedVisitor != null) return typedVisitor.VisitPartitionDefinerAtom(this);
@@ -13722,16 +12552,6 @@ public partial class MySqlParser : Parser {
 		}
 		public override int RuleIndex { get { return RULE_partitionDefinerVector; } }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterPartitionDefinerVector(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitPartitionDefinerVector(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
 			if (typedVisitor != null) return typedVisitor.VisitPartitionDefinerVector(this);
@@ -13799,16 +12619,6 @@ public partial class MySqlParser : Parser {
 		}
 		public override int RuleIndex { get { return RULE_subpartitionDefinition; } }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterSubpartitionDefinition(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitSubpartitionDefinition(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
 			if (typedVisitor != null) return typedVisitor.VisitSubpartitionDefinition(this);
@@ -13874,16 +12684,6 @@ public partial class MySqlParser : Parser {
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode EQUAL_SYMBOL() { return GetToken(MySqlParser.EQUAL_SYMBOL, 0); }
 		public PartitionOptionCommentContext(PartitionOptionContext context) { CopyFrom(context); }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterPartitionOptionComment(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitPartitionOptionComment(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
 			if (typedVisitor != null) return typedVisitor.VisitPartitionOptionComment(this);
@@ -13899,16 +12699,6 @@ public partial class MySqlParser : Parser {
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode EQUAL_SYMBOL() { return GetToken(MySqlParser.EQUAL_SYMBOL, 0); }
 		public PartitionOptionNodeGroupContext(PartitionOptionContext context) { CopyFrom(context); }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterPartitionOptionNodeGroup(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitPartitionOptionNodeGroup(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
 			if (typedVisitor != null) return typedVisitor.VisitPartitionOptionNodeGroup(this);
@@ -13922,16 +12712,6 @@ public partial class MySqlParser : Parser {
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode STRING_LITERAL() { return GetToken(MySqlParser.STRING_LITERAL, 0); }
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode EQUAL_SYMBOL() { return GetToken(MySqlParser.EQUAL_SYMBOL, 0); }
 		public PartitionOptionIndexDirectoryContext(PartitionOptionContext context) { CopyFrom(context); }
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterPartitionOptionIndexDirectory(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitPartitionOptionIndexDirectory(this);
-		}
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
@@ -13948,16 +12728,6 @@ public partial class MySqlParser : Parser {
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode EQUAL_SYMBOL() { return GetToken(MySqlParser.EQUAL_SYMBOL, 0); }
 		public PartitionOptionMaxRowsContext(PartitionOptionContext context) { CopyFrom(context); }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterPartitionOptionMaxRows(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitPartitionOptionMaxRows(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
 			if (typedVisitor != null) return typedVisitor.VisitPartitionOptionMaxRows(this);
@@ -13972,16 +12742,6 @@ public partial class MySqlParser : Parser {
 		}
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode EQUAL_SYMBOL() { return GetToken(MySqlParser.EQUAL_SYMBOL, 0); }
 		public PartitionOptionTablespaceContext(PartitionOptionContext context) { CopyFrom(context); }
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterPartitionOptionTablespace(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitPartitionOptionTablespace(this);
-		}
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
@@ -13999,16 +12759,6 @@ public partial class MySqlParser : Parser {
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode EQUAL_SYMBOL() { return GetToken(MySqlParser.EQUAL_SYMBOL, 0); }
 		public PartitionOptionEngineContext(PartitionOptionContext context) { CopyFrom(context); }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterPartitionOptionEngine(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitPartitionOptionEngine(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
 			if (typedVisitor != null) return typedVisitor.VisitPartitionOptionEngine(this);
@@ -14024,16 +12774,6 @@ public partial class MySqlParser : Parser {
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode EQUAL_SYMBOL() { return GetToken(MySqlParser.EQUAL_SYMBOL, 0); }
 		public PartitionOptionMinRowsContext(PartitionOptionContext context) { CopyFrom(context); }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterPartitionOptionMinRows(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitPartitionOptionMinRows(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
 			if (typedVisitor != null) return typedVisitor.VisitPartitionOptionMinRows(this);
@@ -14047,16 +12787,6 @@ public partial class MySqlParser : Parser {
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode STRING_LITERAL() { return GetToken(MySqlParser.STRING_LITERAL, 0); }
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode EQUAL_SYMBOL() { return GetToken(MySqlParser.EQUAL_SYMBOL, 0); }
 		public PartitionOptionDataDirectoryContext(PartitionOptionContext context) { CopyFrom(context); }
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterPartitionOptionDataDirectory(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitPartitionOptionDataDirectory(this);
-		}
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
@@ -14301,16 +13031,6 @@ public partial class MySqlParser : Parser {
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode SCHEMA() { return GetToken(MySqlParser.SCHEMA, 0); }
 		public AlterUpgradeNameContext(AlterDatabaseContext context) { CopyFrom(context); }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterAlterUpgradeName(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitAlterUpgradeName(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
 			if (typedVisitor != null) return typedVisitor.VisitAlterUpgradeName(this);
@@ -14332,16 +13052,6 @@ public partial class MySqlParser : Parser {
 			return GetRuleContext<CreateDatabaseOptionContext>(i);
 		}
 		public AlterSimpleDatabaseContext(AlterDatabaseContext context) { CopyFrom(context); }
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterAlterSimpleDatabase(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitAlterSimpleDatabase(this);
-		}
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
@@ -14481,16 +13191,6 @@ public partial class MySqlParser : Parser {
 		{
 		}
 		public override int RuleIndex { get { return RULE_alterEvent; } }
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterAlterEvent(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitAlterEvent(this);
-		}
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
@@ -14640,16 +13340,6 @@ public partial class MySqlParser : Parser {
 		}
 		public override int RuleIndex { get { return RULE_alterFunction; } }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterAlterFunction(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitAlterFunction(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
 			if (typedVisitor != null) return typedVisitor.VisitAlterFunction(this);
@@ -14710,16 +13400,6 @@ public partial class MySqlParser : Parser {
 		{
 		}
 		public override int RuleIndex { get { return RULE_alterInstance; } }
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterAlterInstance(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitAlterInstance(this);
-		}
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
@@ -14788,16 +13468,6 @@ public partial class MySqlParser : Parser {
 		{
 		}
 		public override int RuleIndex { get { return RULE_alterLogfileGroup; } }
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterAlterLogfileGroup(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitAlterLogfileGroup(this);
-		}
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
@@ -14905,16 +13575,6 @@ public partial class MySqlParser : Parser {
 		}
 		public override int RuleIndex { get { return RULE_alterProcedure; } }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterAlterProcedure(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitAlterProcedure(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
 			if (typedVisitor != null) return typedVisitor.VisitAlterProcedure(this);
@@ -14987,16 +13647,6 @@ public partial class MySqlParser : Parser {
 		{
 		}
 		public override int RuleIndex { get { return RULE_alterServer; } }
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterAlterServer(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitAlterServer(this);
-		}
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
@@ -15084,16 +13734,6 @@ public partial class MySqlParser : Parser {
 		{
 		}
 		public override int RuleIndex { get { return RULE_alterTable; } }
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterAlterTable(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitAlterTable(this);
-		}
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
@@ -15223,16 +13863,6 @@ public partial class MySqlParser : Parser {
 		}
 		public override int RuleIndex { get { return RULE_alterTablespace; } }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterAlterTablespace(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitAlterTablespace(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
 			if (typedVisitor != null) return typedVisitor.VisitAlterTablespace(this);
@@ -15359,16 +13989,6 @@ public partial class MySqlParser : Parser {
 		{
 		}
 		public override int RuleIndex { get { return RULE_alterView; } }
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterAlterView(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitAlterView(this);
-		}
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
@@ -15525,16 +14145,6 @@ public partial class MySqlParser : Parser {
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode KEYS() { return GetToken(MySqlParser.KEYS, 0); }
 		public AlterByDisableKeysContext(AlterSpecificationContext context) { CopyFrom(context); }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterAlterByDisableKeys(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitAlterByDisableKeys(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
 			if (typedVisitor != null) return typedVisitor.VisitAlterByDisableKeys(this);
@@ -15558,16 +14168,6 @@ public partial class MySqlParser : Parser {
 		}
 		public AlterByDefaultCharsetContext(AlterSpecificationContext context) { CopyFrom(context); }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterAlterByDefaultCharset(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitAlterByDefaultCharset(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
 			if (typedVisitor != null) return typedVisitor.VisitAlterByDefaultCharset(this);
@@ -15588,16 +14188,6 @@ public partial class MySqlParser : Parser {
 		}
 		public AlterByRenameColumnContext(AlterSpecificationContext context) { CopyFrom(context); }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterAlterByRenameColumn(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitAlterByRenameColumn(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
 			if (typedVisitor != null) return typedVisitor.VisitAlterByRenameColumn(this);
@@ -15617,16 +14207,6 @@ public partial class MySqlParser : Parser {
 			return GetRuleContext<CollationNameContext>(0);
 		}
 		public AlterByConvertCharsetContext(AlterSpecificationContext context) { CopyFrom(context); }
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterAlterByConvertCharset(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitAlterByConvertCharset(this);
-		}
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
@@ -15653,16 +14233,6 @@ public partial class MySqlParser : Parser {
 			return GetToken(MySqlParser.COMMA, i);
 		}
 		public AlterByAddPartitionContext(AlterSpecificationContext context) { CopyFrom(context); }
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterAlterByAddPartition(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitAlterByAddPartition(this);
-		}
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
@@ -15694,16 +14264,6 @@ public partial class MySqlParser : Parser {
 		}
 		public AlterByAddForeignKeyContext(AlterSpecificationContext context) { CopyFrom(context); }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterAlterByAddForeignKey(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitAlterByAddForeignKey(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
 			if (typedVisitor != null) return typedVisitor.VisitAlterByAddForeignKey(this);
@@ -15724,16 +14284,6 @@ public partial class MySqlParser : Parser {
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode KEY() { return GetToken(MySqlParser.KEY, 0); }
 		public AlterByRenameIndexContext(AlterSpecificationContext context) { CopyFrom(context); }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterAlterByRenameIndex(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitAlterByRenameIndex(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
 			if (typedVisitor != null) return typedVisitor.VisitAlterByRenameIndex(this);
@@ -15744,16 +14294,6 @@ public partial class MySqlParser : Parser {
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode REMOVE() { return GetToken(MySqlParser.REMOVE, 0); }
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode PARTITIONING() { return GetToken(MySqlParser.PARTITIONING, 0); }
 		public AlterByRemovePartitioningContext(AlterSpecificationContext context) { CopyFrom(context); }
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterAlterByRemovePartitioning(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitAlterByRemovePartitioning(this);
-		}
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
@@ -15774,16 +14314,6 @@ public partial class MySqlParser : Parser {
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode AS() { return GetToken(MySqlParser.AS, 0); }
 		public AlterByRenameContext(AlterSpecificationContext context) { CopyFrom(context); }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterAlterByRename(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitAlterByRename(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
 			if (typedVisitor != null) return typedVisitor.VisitAlterByRename(this);
@@ -15799,16 +14329,6 @@ public partial class MySqlParser : Parser {
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode ALL() { return GetToken(MySqlParser.ALL, 0); }
 		public AlterByOptimizePartitionContext(AlterSpecificationContext context) { CopyFrom(context); }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterAlterByOptimizePartition(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitAlterByOptimizePartition(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
 			if (typedVisitor != null) return typedVisitor.VisitAlterByOptimizePartition(this);
@@ -15819,16 +14339,6 @@ public partial class MySqlParser : Parser {
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode IMPORT() { return GetToken(MySqlParser.IMPORT, 0); }
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode TABLESPACE() { return GetToken(MySqlParser.TABLESPACE, 0); }
 		public AlterByImportTablespaceContext(AlterSpecificationContext context) { CopyFrom(context); }
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterAlterByImportTablespace(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitAlterByImportTablespace(this);
-		}
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
@@ -15843,16 +14353,6 @@ public partial class MySqlParser : Parser {
 			return GetRuleContext<DecimalLiteralContext>(0);
 		}
 		public AlterByCoalescePartitionContext(AlterSpecificationContext context) { CopyFrom(context); }
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterAlterByCoalescePartition(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitAlterByCoalescePartition(this);
-		}
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
@@ -15871,16 +14371,6 @@ public partial class MySqlParser : Parser {
 			return GetRuleContext<IfExistsContext>(0);
 		}
 		public AlterByDropConstraintCheckContext(AlterSpecificationContext context) { CopyFrom(context); }
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterAlterByDropConstraintCheck(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitAlterByDropConstraintCheck(this);
-		}
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
@@ -15914,16 +14404,6 @@ public partial class MySqlParser : Parser {
 		}
 		public AlterByAddColumnsContext(AlterSpecificationContext context) { CopyFrom(context); }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterAlterByAddColumns(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitAlterByAddColumns(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
 			if (typedVisitor != null) return typedVisitor.VisitAlterByAddColumns(this);
@@ -15939,16 +14419,6 @@ public partial class MySqlParser : Parser {
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode VISIBLE() { return GetToken(MySqlParser.VISIBLE, 0); }
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode INVISIBLE() { return GetToken(MySqlParser.INVISIBLE, 0); }
 		public AlterByAlterIndexVisibilityContext(AlterSpecificationContext context) { CopyFrom(context); }
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterAlterByAlterIndexVisibility(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitAlterByAlterIndexVisibility(this);
-		}
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
@@ -15967,16 +14437,6 @@ public partial class MySqlParser : Parser {
 			return GetRuleContext<IfExistsContext>(0);
 		}
 		public AlterByDropForeignKeyContext(AlterSpecificationContext context) { CopyFrom(context); }
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterAlterByDropForeignKey(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitAlterByDropForeignKey(this);
-		}
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
@@ -15999,16 +14459,6 @@ public partial class MySqlParser : Parser {
 		}
 		public AlterByAddCheckTableConstraintContext(AlterSpecificationContext context) { CopyFrom(context); }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterAlterByAddCheckTableConstraint(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitAlterByAddCheckTableConstraint(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
 			if (typedVisitor != null) return typedVisitor.VisitAlterByAddCheckTableConstraint(this);
@@ -16024,16 +14474,6 @@ public partial class MySqlParser : Parser {
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode ALL() { return GetToken(MySqlParser.ALL, 0); }
 		public AlterByRebuildPartitionContext(AlterSpecificationContext context) { CopyFrom(context); }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterAlterByRebuildPartition(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitAlterByRebuildPartition(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
 			if (typedVisitor != null) return typedVisitor.VisitAlterByRebuildPartition(this);
@@ -16044,16 +14484,6 @@ public partial class MySqlParser : Parser {
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode UPGRADE() { return GetToken(MySqlParser.UPGRADE, 0); }
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode PARTITIONING() { return GetToken(MySqlParser.PARTITIONING, 0); }
 		public AlterByUpgradePartitioningContext(AlterSpecificationContext context) { CopyFrom(context); }
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterAlterByUpgradePartitioning(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitAlterByUpgradePartitioning(this);
-		}
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
@@ -16069,16 +14499,6 @@ public partial class MySqlParser : Parser {
 		}
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode ALL() { return GetToken(MySqlParser.ALL, 0); }
 		public AlterByRepairPartitionContext(AlterSpecificationContext context) { CopyFrom(context); }
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterAlterByRepairPartition(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitAlterByRepairPartition(this);
-		}
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
@@ -16104,16 +14524,6 @@ public partial class MySqlParser : Parser {
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode VALIDATION() { return GetToken(MySqlParser.VALIDATION, 0); }
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode WITHOUT() { return GetToken(MySqlParser.WITHOUT, 0); }
 		public AlterByExchangePartitionContext(AlterSpecificationContext context) { CopyFrom(context); }
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterAlterByExchangePartition(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitAlterByExchangePartition(this);
-		}
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
@@ -16146,16 +14556,6 @@ public partial class MySqlParser : Parser {
 		}
 		public AlterByAddIndexContext(AlterSpecificationContext context) { CopyFrom(context); }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterAlterByAddIndex(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitAlterByAddIndex(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
 			if (typedVisitor != null) return typedVisitor.VisitAlterByAddIndex(this);
@@ -16174,16 +14574,6 @@ public partial class MySqlParser : Parser {
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode RESTRICT() { return GetToken(MySqlParser.RESTRICT, 0); }
 		public AlterByDropColumnContext(AlterSpecificationContext context) { CopyFrom(context); }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterAlterByDropColumn(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitAlterByDropColumn(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
 			if (typedVisitor != null) return typedVisitor.VisitAlterByDropColumn(this);
@@ -16199,16 +14589,6 @@ public partial class MySqlParser : Parser {
 		}
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode ALL() { return GetToken(MySqlParser.ALL, 0); }
 		public AlterByImportPartitionContext(AlterSpecificationContext context) { CopyFrom(context); }
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterAlterByImportPartition(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitAlterByImportPartition(this);
-		}
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
@@ -16230,16 +14610,6 @@ public partial class MySqlParser : Parser {
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode COLUMN() { return GetToken(MySqlParser.COLUMN, 0); }
 		public AlterByChangeDefaultContext(AlterSpecificationContext context) { CopyFrom(context); }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterAlterByChangeDefault(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitAlterByChangeDefault(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
 			if (typedVisitor != null) return typedVisitor.VisitAlterByChangeDefault(this);
@@ -16249,16 +14619,6 @@ public partial class MySqlParser : Parser {
 	public partial class AlterByForceContext : AlterSpecificationContext {
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode FORCE() { return GetToken(MySqlParser.FORCE, 0); }
 		public AlterByForceContext(AlterSpecificationContext context) { CopyFrom(context); }
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterAlterByForce(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitAlterByForce(this);
-		}
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
@@ -16276,16 +14636,6 @@ public partial class MySqlParser : Parser {
 			return GetRuleContext<IfExistsContext>(0);
 		}
 		public AlterByDropPartitionContext(AlterSpecificationContext context) { CopyFrom(context); }
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterAlterByDropPartition(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitAlterByDropPartition(this);
-		}
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
@@ -16315,16 +14665,6 @@ public partial class MySqlParser : Parser {
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode KEY() { return GetToken(MySqlParser.KEY, 0); }
 		public AlterByAddSpecialIndexContext(AlterSpecificationContext context) { CopyFrom(context); }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterAlterByAddSpecialIndex(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitAlterByAddSpecialIndex(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
 			if (typedVisitor != null) return typedVisitor.VisitAlterByAddSpecialIndex(this);
@@ -16350,16 +14690,6 @@ public partial class MySqlParser : Parser {
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode AFTER() { return GetToken(MySqlParser.AFTER, 0); }
 		public AlterByModifyColumnContext(AlterSpecificationContext context) { CopyFrom(context); }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterAlterByModifyColumn(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitAlterByModifyColumn(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
 			if (typedVisitor != null) return typedVisitor.VisitAlterByModifyColumn(this);
@@ -16379,16 +14709,6 @@ public partial class MySqlParser : Parser {
 		}
 		public AlterByTableOptionContext(AlterSpecificationContext context) { CopyFrom(context); }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterAlterByTableOption(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitAlterByTableOption(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
 			if (typedVisitor != null) return typedVisitor.VisitAlterByTableOption(this);
@@ -16400,16 +14720,6 @@ public partial class MySqlParser : Parser {
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode PRIMARY() { return GetToken(MySqlParser.PRIMARY, 0); }
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode KEY() { return GetToken(MySqlParser.KEY, 0); }
 		public AlterByDropPrimaryKeyContext(AlterSpecificationContext context) { CopyFrom(context); }
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterAlterByDropPrimaryKey(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitAlterByDropPrimaryKey(this);
-		}
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
@@ -16427,16 +14737,6 @@ public partial class MySqlParser : Parser {
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode EQUAL_SYMBOL() { return GetToken(MySqlParser.EQUAL_SYMBOL, 0); }
 		public AlterByLockContext(AlterSpecificationContext context) { CopyFrom(context); }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterAlterByLock(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitAlterByLock(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
 			if (typedVisitor != null) return typedVisitor.VisitAlterByLock(this);
@@ -16453,16 +14753,6 @@ public partial class MySqlParser : Parser {
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode ALL() { return GetToken(MySqlParser.ALL, 0); }
 		public AlterByDiscardPartitionContext(AlterSpecificationContext context) { CopyFrom(context); }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterAlterByDiscardPartition(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitAlterByDiscardPartition(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
 			if (typedVisitor != null) return typedVisitor.VisitAlterByDiscardPartition(this);
@@ -16473,16 +14763,6 @@ public partial class MySqlParser : Parser {
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode DISCARD() { return GetToken(MySqlParser.DISCARD, 0); }
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode TABLESPACE() { return GetToken(MySqlParser.TABLESPACE, 0); }
 		public AlterByDiscardTablespaceContext(AlterSpecificationContext context) { CopyFrom(context); }
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterAlterByDiscardTablespace(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitAlterByDiscardTablespace(this);
-		}
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
@@ -16496,16 +14776,6 @@ public partial class MySqlParser : Parser {
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode WITHOUT() { return GetToken(MySqlParser.WITHOUT, 0); }
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode WITH() { return GetToken(MySqlParser.WITH, 0); }
 		public AlterByValidateContext(AlterSpecificationContext context) { CopyFrom(context); }
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterAlterByValidate(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitAlterByValidate(this);
-		}
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
@@ -16540,16 +14810,6 @@ public partial class MySqlParser : Parser {
 		}
 		public AlterByAddPrimaryKeyContext(AlterSpecificationContext context) { CopyFrom(context); }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterAlterByAddPrimaryKey(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitAlterByAddPrimaryKey(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
 			if (typedVisitor != null) return typedVisitor.VisitAlterByAddPrimaryKey(this);
@@ -16565,16 +14825,6 @@ public partial class MySqlParser : Parser {
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode ALL() { return GetToken(MySqlParser.ALL, 0); }
 		public AlterByCheckPartitionContext(AlterSpecificationContext context) { CopyFrom(context); }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterAlterByCheckPartition(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitAlterByCheckPartition(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
 			if (typedVisitor != null) return typedVisitor.VisitAlterByCheckPartition(this);
@@ -16585,16 +14835,6 @@ public partial class MySqlParser : Parser {
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode ENABLE() { return GetToken(MySqlParser.ENABLE, 0); }
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode KEYS() { return GetToken(MySqlParser.KEYS, 0); }
 		public AlterByEnableKeysContext(AlterSpecificationContext context) { CopyFrom(context); }
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterAlterByEnableKeys(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitAlterByEnableKeys(this);
-		}
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
@@ -16623,16 +14863,6 @@ public partial class MySqlParser : Parser {
 		}
 		public AlterByReorganizePartitionContext(AlterSpecificationContext context) { CopyFrom(context); }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterAlterByReorganizePartition(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitAlterByReorganizePartition(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
 			if (typedVisitor != null) return typedVisitor.VisitAlterByReorganizePartition(this);
@@ -16649,16 +14879,6 @@ public partial class MySqlParser : Parser {
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode EQUAL_SYMBOL() { return GetToken(MySqlParser.EQUAL_SYMBOL, 0); }
 		public AlterBySetAlgorithmContext(AlterSpecificationContext context) { CopyFrom(context); }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterAlterBySetAlgorithm(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitAlterBySetAlgorithm(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
 			if (typedVisitor != null) return typedVisitor.VisitAlterBySetAlgorithm(this);
@@ -16673,16 +14893,6 @@ public partial class MySqlParser : Parser {
 		}
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode ALL() { return GetToken(MySqlParser.ALL, 0); }
 		public AlterByAnalyzePartitionContext(AlterSpecificationContext context) { CopyFrom(context); }
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterAlterByAnalyzePartition(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitAlterByAnalyzePartition(this);
-		}
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
@@ -16711,16 +14921,6 @@ public partial class MySqlParser : Parser {
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode FIRST() { return GetToken(MySqlParser.FIRST, 0); }
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode AFTER() { return GetToken(MySqlParser.AFTER, 0); }
 		public AlterByChangeColumnContext(AlterSpecificationContext context) { CopyFrom(context); }
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterAlterByChangeColumn(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitAlterByChangeColumn(this);
-		}
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
@@ -16757,16 +14957,6 @@ public partial class MySqlParser : Parser {
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode KEY() { return GetToken(MySqlParser.KEY, 0); }
 		public AlterByAddUniqueKeyContext(AlterSpecificationContext context) { CopyFrom(context); }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterAlterByAddUniqueKey(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitAlterByAddUniqueKey(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
 			if (typedVisitor != null) return typedVisitor.VisitAlterByAddUniqueKey(this);
@@ -16781,16 +14971,6 @@ public partial class MySqlParser : Parser {
 		}
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode ALL() { return GetToken(MySqlParser.ALL, 0); }
 		public AlterByTruncatePartitionContext(AlterSpecificationContext context) { CopyFrom(context); }
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterAlterByTruncatePartition(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitAlterByTruncatePartition(this);
-		}
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
@@ -16810,16 +14990,6 @@ public partial class MySqlParser : Parser {
 			return GetRuleContext<IfExistsContext>(0);
 		}
 		public AlterByDropIndexContext(AlterSpecificationContext context) { CopyFrom(context); }
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterAlterByDropIndex(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitAlterByDropIndex(this);
-		}
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
@@ -16846,16 +15016,6 @@ public partial class MySqlParser : Parser {
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode AFTER() { return GetToken(MySqlParser.AFTER, 0); }
 		public AlterByAddColumnContext(AlterSpecificationContext context) { CopyFrom(context); }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterAlterByAddColumn(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitAlterByAddColumn(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
 			if (typedVisitor != null) return typedVisitor.VisitAlterByAddColumn(this);
@@ -16869,16 +15029,6 @@ public partial class MySqlParser : Parser {
 			return GetRuleContext<UidListContext>(0);
 		}
 		public AlterByOrderContext(AlterSpecificationContext context) { CopyFrom(context); }
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterAlterByOrder(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitAlterByOrder(this);
-		}
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
@@ -25158,16 +23308,6 @@ public partial class MySqlParser : Parser {
 		}
 		public override int RuleIndex { get { return RULE_dropDatabase; } }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterDropDatabase(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitDropDatabase(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
 			if (typedVisitor != null) return typedVisitor.VisitDropDatabase(this);
@@ -25234,16 +23374,6 @@ public partial class MySqlParser : Parser {
 		{
 		}
 		public override int RuleIndex { get { return RULE_dropEvent; } }
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterDropEvent(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitDropEvent(this);
-		}
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
@@ -25345,16 +23475,6 @@ public partial class MySqlParser : Parser {
 		{
 		}
 		public override int RuleIndex { get { return RULE_dropIndex; } }
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterDropIndex(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitDropIndex(this);
-		}
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
@@ -25501,16 +23621,6 @@ public partial class MySqlParser : Parser {
 		}
 		public override int RuleIndex { get { return RULE_dropLogfileGroup; } }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterDropLogfileGroup(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitDropLogfileGroup(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
 			if (typedVisitor != null) return typedVisitor.VisitDropLogfileGroup(this);
@@ -25566,16 +23676,6 @@ public partial class MySqlParser : Parser {
 		{
 		}
 		public override int RuleIndex { get { return RULE_dropProcedure; } }
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterDropProcedure(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitDropProcedure(this);
-		}
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
@@ -25636,16 +23736,6 @@ public partial class MySqlParser : Parser {
 		}
 		public override int RuleIndex { get { return RULE_dropFunction; } }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterDropFunction(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitDropFunction(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
 			if (typedVisitor != null) return typedVisitor.VisitDropFunction(this);
@@ -25704,16 +23794,6 @@ public partial class MySqlParser : Parser {
 		{
 		}
 		public override int RuleIndex { get { return RULE_dropServer; } }
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterDropServer(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitDropServer(this);
-		}
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
@@ -25777,16 +23857,6 @@ public partial class MySqlParser : Parser {
 		{
 		}
 		public override int RuleIndex { get { return RULE_dropTable; } }
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterDropTable(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitDropTable(this);
-		}
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
@@ -25877,16 +23947,6 @@ public partial class MySqlParser : Parser {
 		}
 		public override int RuleIndex { get { return RULE_dropTablespace; } }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterDropTablespace(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitDropTablespace(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
 			if (typedVisitor != null) return typedVisitor.VisitDropTablespace(this);
@@ -25958,16 +24018,6 @@ public partial class MySqlParser : Parser {
 		}
 		public override int RuleIndex { get { return RULE_dropTrigger; } }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterDropTrigger(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitDropTrigger(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
 			if (typedVisitor != null) return typedVisitor.VisitDropTrigger(this);
@@ -26036,16 +24086,6 @@ public partial class MySqlParser : Parser {
 		{
 		}
 		public override int RuleIndex { get { return RULE_dropView; } }
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterDropView(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitDropView(this);
-		}
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
@@ -26144,16 +24184,6 @@ public partial class MySqlParser : Parser {
 		}
 		public override int RuleIndex { get { return RULE_renameTable; } }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterRenameTable(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitRenameTable(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
 			if (typedVisitor != null) return typedVisitor.VisitRenameTable(this);
@@ -26218,16 +24248,6 @@ public partial class MySqlParser : Parser {
 		}
 		public override int RuleIndex { get { return RULE_renameTableClause; } }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterRenameTableClause(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitRenameTableClause(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
 			if (typedVisitor != null) return typedVisitor.VisitRenameTableClause(this);
@@ -26272,16 +24292,6 @@ public partial class MySqlParser : Parser {
 		{
 		}
 		public override int RuleIndex { get { return RULE_truncateTable; } }
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterTruncateTable(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitTruncateTable(this);
-		}
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
@@ -26343,16 +24353,6 @@ public partial class MySqlParser : Parser {
 		{
 		}
 		public override int RuleIndex { get { return RULE_callStatement; } }
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterCallStatement(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitCallStatement(this);
-		}
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
@@ -26426,16 +24426,6 @@ public partial class MySqlParser : Parser {
 		}
 		public override int RuleIndex { get { return RULE_deleteStatement; } }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterDeleteStatement(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitDeleteStatement(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
 			if (typedVisitor != null) return typedVisitor.VisitDeleteStatement(this);
@@ -26489,16 +24479,6 @@ public partial class MySqlParser : Parser {
 		}
 		public override int RuleIndex { get { return RULE_doStatement; } }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterDoStatement(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitDoStatement(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
 			if (typedVisitor != null) return typedVisitor.VisitDoStatement(this);
@@ -26548,16 +24528,6 @@ public partial class MySqlParser : Parser {
 		{
 		}
 		public override int RuleIndex { get { return RULE_handlerStatement; } }
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterHandlerStatement(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitHandlerStatement(this);
-		}
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
@@ -26671,16 +24641,6 @@ public partial class MySqlParser : Parser {
 		{
 		}
 		public override int RuleIndex { get { return RULE_insertStatement; } }
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterInsertStatement(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitInsertStatement(this);
-		}
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
@@ -26952,16 +24912,6 @@ public partial class MySqlParser : Parser {
 		{
 		}
 		public override int RuleIndex { get { return RULE_loadDataStatement; } }
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterLoadDataStatement(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitLoadDataStatement(this);
-		}
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
@@ -27288,16 +25238,6 @@ public partial class MySqlParser : Parser {
 		}
 		public override int RuleIndex { get { return RULE_loadXmlStatement; } }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterLoadXmlStatement(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitLoadXmlStatement(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
 			if (typedVisitor != null) return typedVisitor.VisitLoadXmlStatement(this);
@@ -27549,16 +25489,6 @@ public partial class MySqlParser : Parser {
 		}
 		public override int RuleIndex { get { return RULE_replaceStatement; } }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterReplaceStatement(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitReplaceStatement(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
 			if (typedVisitor != null) return typedVisitor.VisitReplaceStatement(this);
@@ -27732,16 +25662,6 @@ public partial class MySqlParser : Parser {
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode DISTINCT() { return GetToken(MySqlParser.DISTINCT, 0); }
 		public UnionSelectContext(SelectStatementContext context) { CopyFrom(context); }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterUnionSelect(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitUnionSelect(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
 			if (typedVisitor != null) return typedVisitor.VisitUnionSelect(this);
@@ -27776,16 +25696,6 @@ public partial class MySqlParser : Parser {
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode DISTINCT() { return GetToken(MySqlParser.DISTINCT, 0); }
 		public UnionParenthesisSelectContext(SelectStatementContext context) { CopyFrom(context); }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterUnionParenthesisSelect(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitUnionParenthesisSelect(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
 			if (typedVisitor != null) return typedVisitor.VisitUnionParenthesisSelect(this);
@@ -27801,16 +25711,6 @@ public partial class MySqlParser : Parser {
 		}
 		public SimpleSelectContext(SelectStatementContext context) { CopyFrom(context); }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterSimpleSelect(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitSimpleSelect(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
 			if (typedVisitor != null) return typedVisitor.VisitSimpleSelect(this);
@@ -27825,16 +25725,6 @@ public partial class MySqlParser : Parser {
 			return GetRuleContext<LockClauseContext>(0);
 		}
 		public ParenthesisSelectContext(SelectStatementContext context) { CopyFrom(context); }
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterParenthesisSelect(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitParenthesisSelect(this);
-		}
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
@@ -28107,16 +25997,6 @@ public partial class MySqlParser : Parser {
 		}
 		public override int RuleIndex { get { return RULE_updateStatement; } }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterUpdateStatement(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitUpdateStatement(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
 			if (typedVisitor != null) return typedVisitor.VisitUpdateStatement(this);
@@ -28189,16 +26069,6 @@ public partial class MySqlParser : Parser {
 		{
 		}
 		public override int RuleIndex { get { return RULE_insertStatementValue; } }
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterInsertStatementValue(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitInsertStatementValue(this);
-		}
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
@@ -28312,16 +26182,6 @@ public partial class MySqlParser : Parser {
 		}
 		public override int RuleIndex { get { return RULE_updatedElement; } }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterUpdatedElement(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitUpdatedElement(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
 			if (typedVisitor != null) return typedVisitor.VisitUpdatedElement(this);
@@ -28379,16 +26239,6 @@ public partial class MySqlParser : Parser {
 		{
 		}
 		public override int RuleIndex { get { return RULE_assignmentField; } }
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterAssignmentField(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitAssignmentField(this);
-		}
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
@@ -29266,16 +27116,6 @@ public partial class MySqlParser : Parser {
 		}
 		public override int RuleIndex { get { return RULE_lockClause; } }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterLockClause(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitLockClause(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
 			if (typedVisitor != null) return typedVisitor.VisitLockClause(this);
@@ -29360,16 +27200,6 @@ public partial class MySqlParser : Parser {
 		{
 		}
 		public override int RuleIndex { get { return RULE_singleDeleteStatement; } }
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterSingleDeleteStatement(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitSingleDeleteStatement(this);
-		}
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
@@ -29523,16 +27353,6 @@ public partial class MySqlParser : Parser {
 		{
 		}
 		public override int RuleIndex { get { return RULE_multipleDeleteStatement; } }
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterMultipleDeleteStatement(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitMultipleDeleteStatement(this);
-		}
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
@@ -30549,16 +28369,6 @@ public partial class MySqlParser : Parser {
 		}
 		public override int RuleIndex { get { return RULE_handlerOpenStatement; } }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterHandlerOpenStatement(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitHandlerOpenStatement(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
 			if (typedVisitor != null) return typedVisitor.VisitHandlerOpenStatement(this);
@@ -30649,16 +28459,6 @@ public partial class MySqlParser : Parser {
 		{
 		}
 		public override int RuleIndex { get { return RULE_handlerReadIndexStatement; } }
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterHandlerReadIndexStatement(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitHandlerReadIndexStatement(this);
-		}
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
@@ -30781,16 +28581,6 @@ public partial class MySqlParser : Parser {
 		}
 		public override int RuleIndex { get { return RULE_handlerReadStatement; } }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterHandlerReadStatement(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitHandlerReadStatement(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
 			if (typedVisitor != null) return typedVisitor.VisitHandlerReadStatement(this);
@@ -30871,16 +28661,6 @@ public partial class MySqlParser : Parser {
 		}
 		public override int RuleIndex { get { return RULE_handlerCloseStatement; } }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterHandlerCloseStatement(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitHandlerCloseStatement(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
 			if (typedVisitor != null) return typedVisitor.VisitHandlerCloseStatement(this);
@@ -30952,16 +28732,6 @@ public partial class MySqlParser : Parser {
 		{
 		}
 		public override int RuleIndex { get { return RULE_singleUpdateStatement; } }
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterSingleUpdateStatement(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitSingleUpdateStatement(this);
-		}
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
@@ -31116,16 +28886,6 @@ public partial class MySqlParser : Parser {
 		}
 		public override int RuleIndex { get { return RULE_multipleUpdateStatement; } }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterMultipleUpdateStatement(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitMultipleUpdateStatement(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
 			if (typedVisitor != null) return typedVisitor.VisitMultipleUpdateStatement(this);
@@ -31229,16 +28989,6 @@ public partial class MySqlParser : Parser {
 		}
 		public override int RuleIndex { get { return RULE_orderByClause; } }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterOrderByClause(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitOrderByClause(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
 			if (typedVisitor != null) return typedVisitor.VisitOrderByClause(this);
@@ -31301,16 +29051,6 @@ public partial class MySqlParser : Parser {
 		{
 		}
 		public override int RuleIndex { get { return RULE_orderByExpression; } }
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterOrderByExpression(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitOrderByExpression(this);
-		}
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
@@ -31376,16 +29116,6 @@ public partial class MySqlParser : Parser {
 		{
 		}
 		public override int RuleIndex { get { return RULE_tableSources; } }
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterTableSources(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitTableSources(this);
-		}
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
@@ -31459,16 +29189,6 @@ public partial class MySqlParser : Parser {
 		}
 		public TableSourceNestedContext(TableSourceContext context) { CopyFrom(context); }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterTableSourceNested(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitTableSourceNested(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
 			if (typedVisitor != null) return typedVisitor.VisitTableSourceNested(this);
@@ -31486,16 +29206,6 @@ public partial class MySqlParser : Parser {
 			return GetRuleContext<JoinPartContext>(i);
 		}
 		public TableSourceBaseContext(TableSourceContext context) { CopyFrom(context); }
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterTableSourceBase(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitTableSourceBase(this);
-		}
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
@@ -31603,16 +29313,6 @@ public partial class MySqlParser : Parser {
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode AS() { return GetToken(MySqlParser.AS, 0); }
 		public SubqueryTableItemContext(TableSourceItemContext context) { CopyFrom(context); }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterSubqueryTableItem(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitSubqueryTableItem(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
 			if (typedVisitor != null) return typedVisitor.VisitSubqueryTableItem(this);
@@ -31646,16 +29346,6 @@ public partial class MySqlParser : Parser {
 		}
 		public AtomTableItemContext(TableSourceItemContext context) { CopyFrom(context); }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterAtomTableItem(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitAtomTableItem(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
 			if (typedVisitor != null) return typedVisitor.VisitAtomTableItem(this);
@@ -31669,16 +29359,6 @@ public partial class MySqlParser : Parser {
 		}
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode RR_BRACKET() { return GetToken(MySqlParser.RR_BRACKET, 0); }
 		public TableSourcesItemContext(TableSourceItemContext context) { CopyFrom(context); }
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterTableSourcesItem(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitTableSourcesItem(this);
-		}
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
@@ -31855,16 +29535,6 @@ public partial class MySqlParser : Parser {
 		}
 		public override int RuleIndex { get { return RULE_indexHint; } }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterIndexHint(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitIndexHint(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
 			if (typedVisitor != null) return typedVisitor.VisitIndexHint(this);
@@ -31941,16 +29611,6 @@ public partial class MySqlParser : Parser {
 		{
 		}
 		public override int RuleIndex { get { return RULE_indexHintType; } }
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterIndexHintType(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitIndexHintType(this);
-		}
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
@@ -32038,16 +29698,6 @@ public partial class MySqlParser : Parser {
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode CROSS() { return GetToken(MySqlParser.CROSS, 0); }
 		public InnerJoinContext(JoinPartContext context) { CopyFrom(context); }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterInnerJoin(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitInnerJoin(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
 			if (typedVisitor != null) return typedVisitor.VisitInnerJoin(this);
@@ -32064,16 +29714,6 @@ public partial class MySqlParser : Parser {
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode RIGHT() { return GetToken(MySqlParser.RIGHT, 0); }
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode OUTER() { return GetToken(MySqlParser.OUTER, 0); }
 		public NaturalJoinContext(JoinPartContext context) { CopyFrom(context); }
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterNaturalJoin(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitNaturalJoin(this);
-		}
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
@@ -32101,16 +29741,6 @@ public partial class MySqlParser : Parser {
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode OUTER() { return GetToken(MySqlParser.OUTER, 0); }
 		public OuterJoinContext(JoinPartContext context) { CopyFrom(context); }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterOuterJoin(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitOuterJoin(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
 			if (typedVisitor != null) return typedVisitor.VisitOuterJoin(this);
@@ -32127,16 +29757,6 @@ public partial class MySqlParser : Parser {
 			return GetRuleContext<ExpressionContext>(0);
 		}
 		public StraightJoinContext(JoinPartContext context) { CopyFrom(context); }
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterStraightJoin(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitStraightJoin(this);
-		}
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
@@ -32354,16 +29974,6 @@ public partial class MySqlParser : Parser {
 		}
 		public override int RuleIndex { get { return RULE_queryExpression; } }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterQueryExpression(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitQueryExpression(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
 			if (typedVisitor != null) return typedVisitor.VisitQueryExpression(this);
@@ -32428,16 +30038,6 @@ public partial class MySqlParser : Parser {
 		{
 		}
 		public override int RuleIndex { get { return RULE_queryExpressionNointo; } }
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterQueryExpressionNointo(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitQueryExpressionNointo(this);
-		}
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
@@ -32526,16 +30126,6 @@ public partial class MySqlParser : Parser {
 		{
 		}
 		public override int RuleIndex { get { return RULE_querySpecification; } }
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterQuerySpecification(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitQuerySpecification(this);
-		}
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
@@ -32792,16 +30382,6 @@ public partial class MySqlParser : Parser {
 		}
 		public override int RuleIndex { get { return RULE_querySpecificationNointo; } }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterQuerySpecificationNointo(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitQuerySpecificationNointo(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
 			if (typedVisitor != null) return typedVisitor.VisitQuerySpecificationNointo(this);
@@ -32925,16 +30505,6 @@ public partial class MySqlParser : Parser {
 		}
 		public override int RuleIndex { get { return RULE_unionParenthesis; } }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterUnionParenthesis(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitUnionParenthesis(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
 			if (typedVisitor != null) return typedVisitor.VisitUnionParenthesis(this);
@@ -33001,16 +30571,6 @@ public partial class MySqlParser : Parser {
 		{
 		}
 		public override int RuleIndex { get { return RULE_unionStatement; } }
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterUnionStatement(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitUnionStatement(this);
-		}
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
@@ -33095,16 +30655,6 @@ public partial class MySqlParser : Parser {
 		{
 		}
 		public override int RuleIndex { get { return RULE_selectSpec; } }
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterSelectSpec(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitSelectSpec(this);
-		}
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
@@ -33229,16 +30779,6 @@ public partial class MySqlParser : Parser {
 		}
 		public override int RuleIndex { get { return RULE_selectElements; } }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterSelectElements(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitSelectElements(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
 			if (typedVisitor != null) return typedVisitor.VisitSelectElements(this);
@@ -33323,16 +30863,6 @@ public partial class MySqlParser : Parser {
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode AS() { return GetToken(MySqlParser.AS, 0); }
 		public SelectExpressionElementContext(SelectElementContext context) { CopyFrom(context); }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterSelectExpressionElement(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitSelectExpressionElement(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
 			if (typedVisitor != null) return typedVisitor.VisitSelectExpressionElement(this);
@@ -33349,16 +30879,6 @@ public partial class MySqlParser : Parser {
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode AS() { return GetToken(MySqlParser.AS, 0); }
 		public SelectFunctionElementContext(SelectElementContext context) { CopyFrom(context); }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterSelectFunctionElement(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitSelectFunctionElement(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
 			if (typedVisitor != null) return typedVisitor.VisitSelectFunctionElement(this);
@@ -33372,16 +30892,6 @@ public partial class MySqlParser : Parser {
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode DOT() { return GetToken(MySqlParser.DOT, 0); }
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode STAR() { return GetToken(MySqlParser.STAR, 0); }
 		public SelectStarElementContext(SelectElementContext context) { CopyFrom(context); }
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterSelectStarElement(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitSelectStarElement(this);
-		}
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
@@ -33398,16 +30908,6 @@ public partial class MySqlParser : Parser {
 		}
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode AS() { return GetToken(MySqlParser.AS, 0); }
 		public SelectColumnElementContext(SelectElementContext context) { CopyFrom(context); }
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterSelectColumnElement(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitSelectColumnElement(this);
-		}
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
@@ -33572,16 +31072,6 @@ public partial class MySqlParser : Parser {
 		}
 		public SelectIntoVariablesContext(SelectIntoExpressionContext context) { CopyFrom(context); }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterSelectIntoVariables(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitSelectIntoVariables(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
 			if (typedVisitor != null) return typedVisitor.VisitSelectIntoVariables(this);
@@ -33617,16 +31107,6 @@ public partial class MySqlParser : Parser {
 		}
 		public SelectIntoTextFileContext(SelectIntoExpressionContext context) { CopyFrom(context); }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterSelectIntoTextFile(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitSelectIntoTextFile(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
 			if (typedVisitor != null) return typedVisitor.VisitSelectIntoTextFile(this);
@@ -33638,16 +31118,6 @@ public partial class MySqlParser : Parser {
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode DUMPFILE() { return GetToken(MySqlParser.DUMPFILE, 0); }
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode STRING_LITERAL() { return GetToken(MySqlParser.STRING_LITERAL, 0); }
 		public SelectIntoDumpFileContext(SelectIntoExpressionContext context) { CopyFrom(context); }
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterSelectIntoDumpFile(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitSelectIntoDumpFile(this);
-		}
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
@@ -33816,16 +31286,6 @@ public partial class MySqlParser : Parser {
 		}
 		public override int RuleIndex { get { return RULE_selectFieldsInto; } }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterSelectFieldsInto(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitSelectFieldsInto(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
 			if (typedVisitor != null) return typedVisitor.VisitSelectFieldsInto(this);
@@ -33914,16 +31374,6 @@ public partial class MySqlParser : Parser {
 		}
 		public override int RuleIndex { get { return RULE_selectLinesInto; } }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterSelectLinesInto(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitSelectLinesInto(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
 			if (typedVisitor != null) return typedVisitor.VisitSelectLinesInto(this);
@@ -33991,16 +31441,6 @@ public partial class MySqlParser : Parser {
 		{
 		}
 		public override int RuleIndex { get { return RULE_fromClause; } }
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterFromClause(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitFromClause(this);
-		}
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
@@ -34074,16 +31514,6 @@ public partial class MySqlParser : Parser {
 		{
 		}
 		public override int RuleIndex { get { return RULE_groupByClause; } }
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterGroupByClause(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitGroupByClause(this);
-		}
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
@@ -34159,16 +31589,6 @@ public partial class MySqlParser : Parser {
 		}
 		public override int RuleIndex { get { return RULE_havingClause; } }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterHavingClause(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitHavingClause(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
 			if (typedVisitor != null) return typedVisitor.VisitHavingClause(this);
@@ -34235,16 +31655,6 @@ public partial class MySqlParser : Parser {
 		{
 		}
 		public override int RuleIndex { get { return RULE_windowClause; } }
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterWindowClause(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitWindowClause(this);
-		}
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
@@ -34323,16 +31733,6 @@ public partial class MySqlParser : Parser {
 		}
 		public override int RuleIndex { get { return RULE_groupByItem; } }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterGroupByItem(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitGroupByItem(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
 			if (typedVisitor != null) return typedVisitor.VisitGroupByItem(this);
@@ -34398,16 +31798,6 @@ public partial class MySqlParser : Parser {
 		{
 		}
 		public override int RuleIndex { get { return RULE_limitClause; } }
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterLimitClause(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitLimitClause(this);
-		}
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
@@ -34485,16 +31875,6 @@ public partial class MySqlParser : Parser {
 		{
 		}
 		public override int RuleIndex { get { return RULE_limitClauseAtom; } }
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterLimitClauseAtom(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitLimitClauseAtom(this);
-		}
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
@@ -35389,16 +32769,6 @@ public partial class MySqlParser : Parser {
 		}
 		public override int RuleIndex { get { return RULE_startTransaction; } }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterStartTransaction(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitStartTransaction(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
 			if (typedVisitor != null) return typedVisitor.VisitStartTransaction(this);
@@ -35466,16 +32836,6 @@ public partial class MySqlParser : Parser {
 		}
 		public override int RuleIndex { get { return RULE_beginWork; } }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterBeginWork(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitBeginWork(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
 			if (typedVisitor != null) return typedVisitor.VisitBeginWork(this);
@@ -35533,16 +32893,6 @@ public partial class MySqlParser : Parser {
 		{
 		}
 		public override int RuleIndex { get { return RULE_commitWork; } }
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterCommitWork(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitCommitWork(this);
-		}
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
@@ -35644,16 +32994,6 @@ public partial class MySqlParser : Parser {
 		}
 		public override int RuleIndex { get { return RULE_rollbackWork; } }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterRollbackWork(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitRollbackWork(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
 			if (typedVisitor != null) return typedVisitor.VisitRollbackWork(this);
@@ -35747,16 +33087,6 @@ public partial class MySqlParser : Parser {
 		}
 		public override int RuleIndex { get { return RULE_savepointStatement; } }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterSavepointStatement(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitSavepointStatement(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
 			if (typedVisitor != null) return typedVisitor.VisitSavepointStatement(this);
@@ -35801,16 +33131,6 @@ public partial class MySqlParser : Parser {
 		{
 		}
 		public override int RuleIndex { get { return RULE_rollbackStatement; } }
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterRollbackStatement(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitRollbackStatement(this);
-		}
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
@@ -35878,16 +33198,6 @@ public partial class MySqlParser : Parser {
 		}
 		public override int RuleIndex { get { return RULE_releaseStatement; } }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterReleaseStatement(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitReleaseStatement(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
 			if (typedVisitor != null) return typedVisitor.VisitReleaseStatement(this);
@@ -35939,16 +33249,6 @@ public partial class MySqlParser : Parser {
 		{
 		}
 		public override int RuleIndex { get { return RULE_lockTables; } }
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterLockTables(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitLockTables(this);
-		}
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
@@ -36009,16 +33309,6 @@ public partial class MySqlParser : Parser {
 		}
 		public override int RuleIndex { get { return RULE_unlockTables; } }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterUnlockTables(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitUnlockTables(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
 			if (typedVisitor != null) return typedVisitor.VisitUnlockTables(this);
@@ -36062,16 +33352,6 @@ public partial class MySqlParser : Parser {
 		{
 		}
 		public override int RuleIndex { get { return RULE_setAutocommitStatement; } }
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterSetAutocommitStatement(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitSetAutocommitStatement(this);
-		}
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
@@ -36138,16 +33418,6 @@ public partial class MySqlParser : Parser {
 		{
 		}
 		public override int RuleIndex { get { return RULE_setTransactionStatement; } }
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterSetTransactionStatement(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitSetTransactionStatement(this);
-		}
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
@@ -36230,16 +33500,6 @@ public partial class MySqlParser : Parser {
 		}
 		public override int RuleIndex { get { return RULE_transactionMode; } }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterTransactionMode(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitTransactionMode(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
 			if (typedVisitor != null) return typedVisitor.VisitTransactionMode(this);
@@ -36314,16 +33574,6 @@ public partial class MySqlParser : Parser {
 		}
 		public override int RuleIndex { get { return RULE_lockTableElement; } }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterLockTableElement(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitLockTableElement(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
 			if (typedVisitor != null) return typedVisitor.VisitLockTableElement(this);
@@ -36386,16 +33636,6 @@ public partial class MySqlParser : Parser {
 		{
 		}
 		public override int RuleIndex { get { return RULE_lockAction; } }
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterLockAction(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitLockAction(this);
-		}
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
@@ -36478,16 +33718,6 @@ public partial class MySqlParser : Parser {
 		}
 		public override int RuleIndex { get { return RULE_transactionOption; } }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterTransactionOption(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitTransactionOption(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
 			if (typedVisitor != null) return typedVisitor.VisitTransactionOption(this);
@@ -36556,16 +33786,6 @@ public partial class MySqlParser : Parser {
 		{
 		}
 		public override int RuleIndex { get { return RULE_transactionLevel; } }
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterTransactionLevel(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitTransactionLevel(this);
-		}
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
@@ -36652,16 +33872,6 @@ public partial class MySqlParser : Parser {
 		}
 		public override int RuleIndex { get { return RULE_changeMaster; } }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterChangeMaster(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitChangeMaster(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
 			if (typedVisitor != null) return typedVisitor.VisitChangeMaster(this);
@@ -36744,16 +33954,6 @@ public partial class MySqlParser : Parser {
 		}
 		public override int RuleIndex { get { return RULE_changeReplicationFilter; } }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterChangeReplicationFilter(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitChangeReplicationFilter(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
 			if (typedVisitor != null) return typedVisitor.VisitChangeReplicationFilter(this);
@@ -36822,16 +34022,6 @@ public partial class MySqlParser : Parser {
 		{
 		}
 		public override int RuleIndex { get { return RULE_purgeBinaryLogs; } }
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterPurgeBinaryLogs(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitPurgeBinaryLogs(this);
-		}
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
@@ -36906,16 +34096,6 @@ public partial class MySqlParser : Parser {
 		}
 		public override int RuleIndex { get { return RULE_resetMaster; } }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterResetMaster(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitResetMaster(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
 			if (typedVisitor != null) return typedVisitor.VisitResetMaster(this);
@@ -36959,16 +34139,6 @@ public partial class MySqlParser : Parser {
 		{
 		}
 		public override int RuleIndex { get { return RULE_resetSlave; } }
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterResetSlave(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitResetSlave(this);
-		}
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
@@ -37053,16 +34223,6 @@ public partial class MySqlParser : Parser {
 		{
 		}
 		public override int RuleIndex { get { return RULE_startSlave; } }
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterStartSlave(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitStartSlave(this);
-		}
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
@@ -37177,16 +34337,6 @@ public partial class MySqlParser : Parser {
 		}
 		public override int RuleIndex { get { return RULE_stopSlave; } }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterStopSlave(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitStopSlave(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
 			if (typedVisitor != null) return typedVisitor.VisitStopSlave(this);
@@ -37254,16 +34404,6 @@ public partial class MySqlParser : Parser {
 		}
 		public override int RuleIndex { get { return RULE_startGroupReplication; } }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterStartGroupReplication(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitStartGroupReplication(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
 			if (typedVisitor != null) return typedVisitor.VisitStartGroupReplication(this);
@@ -37303,16 +34443,6 @@ public partial class MySqlParser : Parser {
 		{
 		}
 		public override int RuleIndex { get { return RULE_stopGroupReplication; } }
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterStopGroupReplication(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitStopGroupReplication(this);
-		}
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
@@ -37365,16 +34495,6 @@ public partial class MySqlParser : Parser {
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode STRING_LITERAL() { return GetToken(MySqlParser.STRING_LITERAL, 0); }
 		public MasterStringOptionContext(MasterOptionContext context) { CopyFrom(context); }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterMasterStringOption(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitMasterStringOption(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
 			if (typedVisitor != null) return typedVisitor.VisitMasterStringOption(this);
@@ -37386,16 +34506,6 @@ public partial class MySqlParser : Parser {
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode EQUAL_SYMBOL() { return GetToken(MySqlParser.EQUAL_SYMBOL, 0); }
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode REAL_LITERAL() { return GetToken(MySqlParser.REAL_LITERAL, 0); }
 		public MasterRealOptionContext(MasterOptionContext context) { CopyFrom(context); }
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterMasterRealOption(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitMasterRealOption(this);
-		}
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
@@ -37412,16 +34522,6 @@ public partial class MySqlParser : Parser {
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode ZERO_DECIMAL() { return GetToken(MySqlParser.ZERO_DECIMAL, 0); }
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode ONE_DECIMAL() { return GetToken(MySqlParser.ONE_DECIMAL, 0); }
 		public MasterBoolOptionContext(MasterOptionContext context) { CopyFrom(context); }
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterMasterBoolOption(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitMasterBoolOption(this);
-		}
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
@@ -37446,16 +34546,6 @@ public partial class MySqlParser : Parser {
 		}
 		public MasterUidListOptionContext(MasterOptionContext context) { CopyFrom(context); }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterMasterUidListOption(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitMasterUidListOption(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
 			if (typedVisitor != null) return typedVisitor.VisitMasterUidListOption(this);
@@ -37471,16 +34561,6 @@ public partial class MySqlParser : Parser {
 			return GetRuleContext<DecimalLiteralContext>(0);
 		}
 		public MasterDecimalOptionContext(MasterOptionContext context) { CopyFrom(context); }
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterMasterDecimalOption(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitMasterDecimalOption(this);
-		}
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
@@ -37650,16 +34730,6 @@ public partial class MySqlParser : Parser {
 		}
 		public override int RuleIndex { get { return RULE_stringMasterOption; } }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterStringMasterOption(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitStringMasterOption(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
 			if (typedVisitor != null) return typedVisitor.VisitStringMasterOption(this);
@@ -37710,16 +34780,6 @@ public partial class MySqlParser : Parser {
 		}
 		public override int RuleIndex { get { return RULE_decimalMasterOption; } }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterDecimalMasterOption(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitDecimalMasterOption(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
 			if (typedVisitor != null) return typedVisitor.VisitDecimalMasterOption(this);
@@ -37767,16 +34827,6 @@ public partial class MySqlParser : Parser {
 		}
 		public override int RuleIndex { get { return RULE_boolMasterOption; } }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterBoolMasterOption(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitBoolMasterOption(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
 			if (typedVisitor != null) return typedVisitor.VisitBoolMasterOption(this);
@@ -37823,16 +34873,6 @@ public partial class MySqlParser : Parser {
 		{
 		}
 		public override int RuleIndex { get { return RULE_channelOption; } }
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterChannelOption(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitChannelOption(this);
-		}
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
@@ -37889,16 +34929,6 @@ public partial class MySqlParser : Parser {
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode RR_BRACKET() { return GetToken(MySqlParser.RR_BRACKET, 0); }
 		public WildIgnoreTableReplicationContext(ReplicationFilterContext context) { CopyFrom(context); }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterWildIgnoreTableReplication(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitWildIgnoreTableReplication(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
 			if (typedVisitor != null) return typedVisitor.VisitWildIgnoreTableReplication(this);
@@ -37915,16 +34945,6 @@ public partial class MySqlParser : Parser {
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode RR_BRACKET() { return GetToken(MySqlParser.RR_BRACKET, 0); }
 		public DoTableReplicationContext(ReplicationFilterContext context) { CopyFrom(context); }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterDoTableReplication(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitDoTableReplication(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
 			if (typedVisitor != null) return typedVisitor.VisitDoTableReplication(this);
@@ -37940,16 +34960,6 @@ public partial class MySqlParser : Parser {
 		}
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode RR_BRACKET() { return GetToken(MySqlParser.RR_BRACKET, 0); }
 		public IgnoreTableReplicationContext(ReplicationFilterContext context) { CopyFrom(context); }
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterIgnoreTableReplication(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitIgnoreTableReplication(this);
-		}
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
@@ -37974,16 +34984,6 @@ public partial class MySqlParser : Parser {
 		}
 		public RewriteDbReplicationContext(ReplicationFilterContext context) { CopyFrom(context); }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterRewriteDbReplication(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitRewriteDbReplication(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
 			if (typedVisitor != null) return typedVisitor.VisitRewriteDbReplication(this);
@@ -37999,16 +34999,6 @@ public partial class MySqlParser : Parser {
 		}
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode RR_BRACKET() { return GetToken(MySqlParser.RR_BRACKET, 0); }
 		public DoDbReplicationContext(ReplicationFilterContext context) { CopyFrom(context); }
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterDoDbReplication(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitDoDbReplication(this);
-		}
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
@@ -38026,16 +35016,6 @@ public partial class MySqlParser : Parser {
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode RR_BRACKET() { return GetToken(MySqlParser.RR_BRACKET, 0); }
 		public IgnoreDbReplicationContext(ReplicationFilterContext context) { CopyFrom(context); }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterIgnoreDbReplication(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitIgnoreDbReplication(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
 			if (typedVisitor != null) return typedVisitor.VisitIgnoreDbReplication(this);
@@ -38051,16 +35031,6 @@ public partial class MySqlParser : Parser {
 		}
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode RR_BRACKET() { return GetToken(MySqlParser.RR_BRACKET, 0); }
 		public WildDoTableReplicationContext(ReplicationFilterContext context) { CopyFrom(context); }
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterWildDoTableReplication(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitWildDoTableReplication(this);
-		}
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
@@ -38239,16 +35209,6 @@ public partial class MySqlParser : Parser {
 		}
 		public override int RuleIndex { get { return RULE_tablePair; } }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterTablePair(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitTablePair(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
 			if (typedVisitor != null) return typedVisitor.VisitTablePair(this);
@@ -38294,16 +35254,6 @@ public partial class MySqlParser : Parser {
 		{
 		}
 		public override int RuleIndex { get { return RULE_threadType; } }
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterThreadType(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitThreadType(this);
-		}
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
@@ -38364,16 +35314,6 @@ public partial class MySqlParser : Parser {
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode SQL_AFTER_GTIDS() { return GetToken(MySqlParser.SQL_AFTER_GTIDS, 0); }
 		public GtidsUntilOptionContext(UntilOptionContext context) { CopyFrom(context); }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterGtidsUntilOption(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitGtidsUntilOption(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
 			if (typedVisitor != null) return typedVisitor.VisitGtidsUntilOption(this);
@@ -38383,16 +35323,6 @@ public partial class MySqlParser : Parser {
 	public partial class SqlGapsUntilOptionContext : UntilOptionContext {
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode SQL_AFTER_MTS_GAPS() { return GetToken(MySqlParser.SQL_AFTER_MTS_GAPS, 0); }
 		public SqlGapsUntilOptionContext(UntilOptionContext context) { CopyFrom(context); }
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterSqlGapsUntilOption(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitSqlGapsUntilOption(this);
-		}
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
@@ -38414,16 +35344,6 @@ public partial class MySqlParser : Parser {
 		}
 		public MasterLogUntilOptionContext(UntilOptionContext context) { CopyFrom(context); }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterMasterLogUntilOption(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitMasterLogUntilOption(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
 			if (typedVisitor != null) return typedVisitor.VisitMasterLogUntilOption(this);
@@ -38443,16 +35363,6 @@ public partial class MySqlParser : Parser {
 			return GetRuleContext<DecimalLiteralContext>(0);
 		}
 		public RelayLogUntilOptionContext(UntilOptionContext context) { CopyFrom(context); }
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterRelayLogUntilOption(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitRelayLogUntilOption(this);
-		}
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
@@ -38573,16 +35483,6 @@ public partial class MySqlParser : Parser {
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode STRING_LITERAL() { return GetToken(MySqlParser.STRING_LITERAL, 0); }
 		public PluginDirConnectionOptionContext(ConnectionOptionContext context) { CopyFrom(context); }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterPluginDirConnectionOption(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitPluginDirConnectionOption(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
 			if (typedVisitor != null) return typedVisitor.VisitPluginDirConnectionOption(this);
@@ -38595,16 +35495,6 @@ public partial class MySqlParser : Parser {
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode EQUAL_SYMBOL() { return GetToken(MySqlParser.EQUAL_SYMBOL, 0); }
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode STRING_LITERAL() { return GetToken(MySqlParser.STRING_LITERAL, 0); }
 		public UserConnectionOptionContext(ConnectionOptionContext context) { CopyFrom(context); }
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterUserConnectionOption(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitUserConnectionOption(this);
-		}
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
@@ -38619,16 +35509,6 @@ public partial class MySqlParser : Parser {
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode STRING_LITERAL() { return GetToken(MySqlParser.STRING_LITERAL, 0); }
 		public DefaultAuthConnectionOptionContext(ConnectionOptionContext context) { CopyFrom(context); }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterDefaultAuthConnectionOption(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitDefaultAuthConnectionOption(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
 			if (typedVisitor != null) return typedVisitor.VisitDefaultAuthConnectionOption(this);
@@ -38641,16 +35521,6 @@ public partial class MySqlParser : Parser {
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode EQUAL_SYMBOL() { return GetToken(MySqlParser.EQUAL_SYMBOL, 0); }
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode STRING_LITERAL() { return GetToken(MySqlParser.STRING_LITERAL, 0); }
 		public PasswordConnectionOptionContext(ConnectionOptionContext context) { CopyFrom(context); }
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterPasswordConnectionOption(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitPasswordConnectionOption(this);
-		}
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
@@ -38748,16 +35618,6 @@ public partial class MySqlParser : Parser {
 		}
 		public override int RuleIndex { get { return RULE_gtuidSet; } }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterGtuidSet(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitGtuidSet(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
 			if (typedVisitor != null) return typedVisitor.VisitGtuidSet(this);
@@ -38840,16 +35700,6 @@ public partial class MySqlParser : Parser {
 		}
 		public override int RuleIndex { get { return RULE_xaStartTransaction; } }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterXaStartTransaction(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitXaStartTransaction(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
 			if (typedVisitor != null) return typedVisitor.VisitXaStartTransaction(this);
@@ -38925,16 +35775,6 @@ public partial class MySqlParser : Parser {
 		}
 		public override int RuleIndex { get { return RULE_xaEndTransaction; } }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterXaEndTransaction(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitXaEndTransaction(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
 			if (typedVisitor != null) return typedVisitor.VisitXaEndTransaction(this);
@@ -39003,16 +35843,6 @@ public partial class MySqlParser : Parser {
 		}
 		public override int RuleIndex { get { return RULE_xaPrepareStatement; } }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterXaPrepareStatement(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitXaPrepareStatement(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
 			if (typedVisitor != null) return typedVisitor.VisitXaPrepareStatement(this);
@@ -39059,16 +35889,6 @@ public partial class MySqlParser : Parser {
 		{
 		}
 		public override int RuleIndex { get { return RULE_xaCommitWork; } }
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterXaCommitWork(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitXaCommitWork(this);
-		}
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
@@ -39128,16 +35948,6 @@ public partial class MySqlParser : Parser {
 		}
 		public override int RuleIndex { get { return RULE_xaRollbackWork; } }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterXaRollbackWork(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitXaRollbackWork(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
 			if (typedVisitor != null) return typedVisitor.VisitXaRollbackWork(this);
@@ -39183,16 +35993,6 @@ public partial class MySqlParser : Parser {
 		{
 		}
 		public override int RuleIndex { get { return RULE_xaRecoverWork; } }
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterXaRecoverWork(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitXaRecoverWork(this);
-		}
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
@@ -39253,16 +36053,6 @@ public partial class MySqlParser : Parser {
 		{
 		}
 		public override int RuleIndex { get { return RULE_prepareStatement; } }
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterPrepareStatement(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitPrepareStatement(this);
-		}
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
@@ -39330,16 +36120,6 @@ public partial class MySqlParser : Parser {
 		}
 		public override int RuleIndex { get { return RULE_executeStatement; } }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterExecuteStatement(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitExecuteStatement(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
 			if (typedVisitor != null) return typedVisitor.VisitExecuteStatement(this);
@@ -39398,16 +36178,6 @@ public partial class MySqlParser : Parser {
 		}
 		public override int RuleIndex { get { return RULE_deallocatePrepare; } }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterDeallocatePrepare(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitDeallocatePrepare(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
 			if (typedVisitor != null) return typedVisitor.VisitDeallocatePrepare(this);
@@ -39462,16 +36232,6 @@ public partial class MySqlParser : Parser {
 		{
 		}
 		public override int RuleIndex { get { return RULE_routineBody; } }
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterRoutineBody(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitRoutineBody(this);
-		}
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
@@ -39564,16 +36324,6 @@ public partial class MySqlParser : Parser {
 		{
 		}
 		public override int RuleIndex { get { return RULE_blockStatement; } }
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterBlockStatement(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitBlockStatement(this);
-		}
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
@@ -39755,16 +36505,6 @@ public partial class MySqlParser : Parser {
 		}
 		public override int RuleIndex { get { return RULE_caseStatement; } }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterCaseStatement(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitCaseStatement(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
 			if (typedVisitor != null) return typedVisitor.VisitCaseStatement(this);
@@ -39892,16 +36632,6 @@ public partial class MySqlParser : Parser {
 		}
 		public override int RuleIndex { get { return RULE_ifStatement; } }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterIfStatement(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitIfStatement(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
 			if (typedVisitor != null) return typedVisitor.VisitIfStatement(this);
@@ -40018,16 +36748,6 @@ public partial class MySqlParser : Parser {
 		}
 		public override int RuleIndex { get { return RULE_iterateStatement; } }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterIterateStatement(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitIterateStatement(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
 			if (typedVisitor != null) return typedVisitor.VisitIterateStatement(this);
@@ -40069,16 +36789,6 @@ public partial class MySqlParser : Parser {
 		{
 		}
 		public override int RuleIndex { get { return RULE_leaveStatement; } }
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterLeaveStatement(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitLeaveStatement(this);
-		}
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
@@ -40135,16 +36845,6 @@ public partial class MySqlParser : Parser {
 		{
 		}
 		public override int RuleIndex { get { return RULE_loopStatement; } }
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterLoopStatement(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitLoopStatement(this);
-		}
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
@@ -40252,16 +36952,6 @@ public partial class MySqlParser : Parser {
 		}
 		public override int RuleIndex { get { return RULE_repeatStatement; } }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterRepeatStatement(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitRepeatStatement(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
 			if (typedVisitor != null) return typedVisitor.VisitRepeatStatement(this);
@@ -40354,16 +37044,6 @@ public partial class MySqlParser : Parser {
 		}
 		public override int RuleIndex { get { return RULE_returnStatement; } }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterReturnStatement(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitReturnStatement(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
 			if (typedVisitor != null) return typedVisitor.VisitReturnStatement(this);
@@ -40423,16 +37103,6 @@ public partial class MySqlParser : Parser {
 		{
 		}
 		public override int RuleIndex { get { return RULE_whileStatement; } }
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterWhileStatement(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitWhileStatement(this);
-		}
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
@@ -40534,16 +37204,6 @@ public partial class MySqlParser : Parser {
 		}
 		public CloseCursorContext(CursorStatementContext context) { CopyFrom(context); }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterCloseCursor(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitCloseCursor(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
 			if (typedVisitor != null) return typedVisitor.VisitCloseCursor(this);
@@ -40556,16 +37216,6 @@ public partial class MySqlParser : Parser {
 			return GetRuleContext<UidContext>(0);
 		}
 		public OpenCursorContext(CursorStatementContext context) { CopyFrom(context); }
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterOpenCursor(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitOpenCursor(this);
-		}
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
@@ -40585,16 +37235,6 @@ public partial class MySqlParser : Parser {
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode FROM() { return GetToken(MySqlParser.FROM, 0); }
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode NEXT() { return GetToken(MySqlParser.NEXT, 0); }
 		public FetchCursorContext(CursorStatementContext context) { CopyFrom(context); }
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterFetchCursor(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitFetchCursor(this);
-		}
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
@@ -40699,16 +37339,6 @@ public partial class MySqlParser : Parser {
 		}
 		public override int RuleIndex { get { return RULE_declareVariable; } }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterDeclareVariable(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitDeclareVariable(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
 			if (typedVisitor != null) return typedVisitor.VisitDeclareVariable(this);
@@ -40773,16 +37403,6 @@ public partial class MySqlParser : Parser {
 		{
 		}
 		public override int RuleIndex { get { return RULE_declareCondition; } }
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterDeclareCondition(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitDeclareCondition(this);
-		}
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
@@ -40870,16 +37490,6 @@ public partial class MySqlParser : Parser {
 		}
 		public override int RuleIndex { get { return RULE_declareCursor; } }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterDeclareCursor(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitDeclareCursor(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
 			if (typedVisitor != null) return typedVisitor.VisitDeclareCursor(this);
@@ -40943,16 +37553,6 @@ public partial class MySqlParser : Parser {
 		{
 		}
 		public override int RuleIndex { get { return RULE_declareHandler; } }
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterDeclareHandler(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitDeclareHandler(this);
-		}
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
@@ -41034,16 +37634,6 @@ public partial class MySqlParser : Parser {
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode SQLWARNING() { return GetToken(MySqlParser.SQLWARNING, 0); }
 		public HandlerConditionWarningContext(HandlerConditionValueContext context) { CopyFrom(context); }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterHandlerConditionWarning(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitHandlerConditionWarning(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
 			if (typedVisitor != null) return typedVisitor.VisitHandlerConditionWarning(this);
@@ -41056,16 +37646,6 @@ public partial class MySqlParser : Parser {
 		}
 		public HandlerConditionCodeContext(HandlerConditionValueContext context) { CopyFrom(context); }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterHandlerConditionCode(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitHandlerConditionCode(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
 			if (typedVisitor != null) return typedVisitor.VisitHandlerConditionCode(this);
@@ -41076,16 +37656,6 @@ public partial class MySqlParser : Parser {
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode NOT() { return GetToken(MySqlParser.NOT, 0); }
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode FOUND() { return GetToken(MySqlParser.FOUND, 0); }
 		public HandlerConditionNotfoundContext(HandlerConditionValueContext context) { CopyFrom(context); }
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterHandlerConditionNotfound(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitHandlerConditionNotfound(this);
-		}
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
@@ -41099,16 +37669,6 @@ public partial class MySqlParser : Parser {
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode VALUE() { return GetToken(MySqlParser.VALUE, 0); }
 		public HandlerConditionStateContext(HandlerConditionValueContext context) { CopyFrom(context); }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterHandlerConditionState(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitHandlerConditionState(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
 			if (typedVisitor != null) return typedVisitor.VisitHandlerConditionState(this);
@@ -41118,16 +37678,6 @@ public partial class MySqlParser : Parser {
 	public partial class HandlerConditionExceptionContext : HandlerConditionValueContext {
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode SQLEXCEPTION() { return GetToken(MySqlParser.SQLEXCEPTION, 0); }
 		public HandlerConditionExceptionContext(HandlerConditionValueContext context) { CopyFrom(context); }
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterHandlerConditionException(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitHandlerConditionException(this);
-		}
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
@@ -41140,16 +37690,6 @@ public partial class MySqlParser : Parser {
 			return GetRuleContext<UidContext>(0);
 		}
 		public HandlerConditionNameContext(HandlerConditionValueContext context) { CopyFrom(context); }
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterHandlerConditionName(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitHandlerConditionName(this);
-		}
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
@@ -42081,16 +38621,6 @@ public partial class MySqlParser : Parser {
 		}
 		public override int RuleIndex { get { return RULE_procedureSqlStatement; } }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterProcedureSqlStatement(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitProcedureSqlStatement(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
 			if (typedVisitor != null) return typedVisitor.VisitProcedureSqlStatement(this);
@@ -42156,16 +38686,6 @@ public partial class MySqlParser : Parser {
 		{
 		}
 		public override int RuleIndex { get { return RULE_caseAlternative; } }
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterCaseAlternative(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitCaseAlternative(this);
-		}
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
@@ -42253,16 +38773,6 @@ public partial class MySqlParser : Parser {
 		}
 		public override int RuleIndex { get { return RULE_elifAlternative; } }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterElifAlternative(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitElifAlternative(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
 			if (typedVisitor != null) return typedVisitor.VisitElifAlternative(this);
@@ -42344,16 +38854,6 @@ public partial class MySqlParser : Parser {
 		}
 		public AlterUserMysqlV56Context(AlterUserContext context) { CopyFrom(context); }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterAlterUserMysqlV56(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitAlterUserMysqlV56(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
 			if (typedVisitor != null) return typedVisitor.VisitAlterUserMysqlV56(this);
@@ -42409,16 +38909,6 @@ public partial class MySqlParser : Parser {
 			return GetToken(MySqlParser.AND, i);
 		}
 		public AlterUserMysqlV57Context(AlterUserContext context) { CopyFrom(context); }
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterAlterUserMysqlV57(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitAlterUserMysqlV57(this);
-		}
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
@@ -42685,16 +39175,6 @@ public partial class MySqlParser : Parser {
 		}
 		public CreateUserMysqlV57Context(CreateUserContext context) { CopyFrom(context); }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterCreateUserMysqlV57(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitCreateUserMysqlV57(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
 			if (typedVisitor != null) return typedVisitor.VisitCreateUserMysqlV57(this);
@@ -42715,16 +39195,6 @@ public partial class MySqlParser : Parser {
 			return GetToken(MySqlParser.COMMA, i);
 		}
 		public CreateUserMysqlV56Context(CreateUserContext context) { CopyFrom(context); }
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterCreateUserMysqlV56(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitCreateUserMysqlV56(this);
-		}
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
@@ -42951,16 +39421,6 @@ public partial class MySqlParser : Parser {
 		}
 		public override int RuleIndex { get { return RULE_dropUser; } }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterDropUser(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitDropUser(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
 			if (typedVisitor != null) return typedVisitor.VisitDropUser(this);
@@ -43101,16 +39561,6 @@ public partial class MySqlParser : Parser {
 		{
 		}
 		public override int RuleIndex { get { return RULE_grantStatement; } }
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterGrantStatement(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitGrantStatement(this);
-		}
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
@@ -43464,16 +39914,6 @@ public partial class MySqlParser : Parser {
 		}
 		public override int RuleIndex { get { return RULE_roleOption; } }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterRoleOption(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitRoleOption(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
 			if (typedVisitor != null) return typedVisitor.VisitRoleOption(this);
@@ -43610,16 +40050,6 @@ public partial class MySqlParser : Parser {
 		}
 		public override int RuleIndex { get { return RULE_grantProxy; } }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterGrantProxy(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitGrantProxy(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
 			if (typedVisitor != null) return typedVisitor.VisitGrantProxy(this);
@@ -43709,16 +40139,6 @@ public partial class MySqlParser : Parser {
 		{
 		}
 		public override int RuleIndex { get { return RULE_renameUser; } }
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterRenameUser(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitRenameUser(this);
-		}
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
@@ -43811,16 +40231,6 @@ public partial class MySqlParser : Parser {
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode PROCEDURE() { return GetToken(MySqlParser.PROCEDURE, 0); }
 		public DetailRevokeContext(RevokeStatementContext context) { CopyFrom(context); }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterDetailRevoke(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitDetailRevoke(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
 			if (typedVisitor != null) return typedVisitor.VisitDetailRevoke(this);
@@ -43848,16 +40258,6 @@ public partial class MySqlParser : Parser {
 		}
 		public RoleRevokeContext(RevokeStatementContext context) { CopyFrom(context); }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterRoleRevoke(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitRoleRevoke(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
 			if (typedVisitor != null) return typedVisitor.VisitRoleRevoke(this);
@@ -43882,16 +40282,6 @@ public partial class MySqlParser : Parser {
 		}
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode PRIVILEGES() { return GetToken(MySqlParser.PRIVILEGES, 0); }
 		public ShortRevokeContext(RevokeStatementContext context) { CopyFrom(context); }
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterShortRevoke(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitShortRevoke(this);
-		}
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
@@ -44135,16 +40525,6 @@ public partial class MySqlParser : Parser {
 		}
 		public override int RuleIndex { get { return RULE_revokeProxy; } }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterRevokeProxy(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitRevokeProxy(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
 			if (typedVisitor != null) return typedVisitor.VisitRevokeProxy(this);
@@ -44219,16 +40599,6 @@ public partial class MySqlParser : Parser {
 		{
 		}
 		public override int RuleIndex { get { return RULE_setPasswordStatement; } }
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterSetPasswordStatement(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitSetPasswordStatement(this);
-		}
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
@@ -44308,16 +40678,6 @@ public partial class MySqlParser : Parser {
 		}
 		public override int RuleIndex { get { return RULE_userSpecification; } }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterUserSpecification(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitUserSpecification(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
 			if (typedVisitor != null) return typedVisitor.VisitUserSpecification(this);
@@ -44367,16 +40727,6 @@ public partial class MySqlParser : Parser {
 		}
 		public SimpleAuthOptionContext(UserAuthOptionContext context) { CopyFrom(context); }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterSimpleAuthOption(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitSimpleAuthOption(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
 			if (typedVisitor != null) return typedVisitor.VisitSimpleAuthOption(this);
@@ -44393,16 +40743,6 @@ public partial class MySqlParser : Parser {
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode PASSWORD() { return GetToken(MySqlParser.PASSWORD, 0); }
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode STRING_LITERAL() { return GetToken(MySqlParser.STRING_LITERAL, 0); }
 		public PasswordAuthOptionContext(UserAuthOptionContext context) { CopyFrom(context); }
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterPasswordAuthOption(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitPasswordAuthOption(this);
-		}
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
@@ -44426,16 +40766,6 @@ public partial class MySqlParser : Parser {
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode PASSWORD() { return GetToken(MySqlParser.PASSWORD, 0); }
 		public StringAuthOptionContext(UserAuthOptionContext context) { CopyFrom(context); }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterStringAuthOption(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitStringAuthOption(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
 			if (typedVisitor != null) return typedVisitor.VisitStringAuthOption(this);
@@ -44454,16 +40784,6 @@ public partial class MySqlParser : Parser {
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode AS() { return GetToken(MySqlParser.AS, 0); }
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode STRING_LITERAL() { return GetToken(MySqlParser.STRING_LITERAL, 0); }
 		public HashAuthOptionContext(UserAuthOptionContext context) { CopyFrom(context); }
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterHashAuthOption(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitHashAuthOption(this);
-		}
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
@@ -44597,16 +40917,6 @@ public partial class MySqlParser : Parser {
 		}
 		public override int RuleIndex { get { return RULE_tlsOption; } }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterTlsOption(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitTlsOption(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
 			if (typedVisitor != null) return typedVisitor.VisitTlsOption(this);
@@ -44692,16 +41002,6 @@ public partial class MySqlParser : Parser {
 		}
 		public override int RuleIndex { get { return RULE_userResourceOption; } }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterUserResourceOption(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitUserResourceOption(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
 			if (typedVisitor != null) return typedVisitor.VisitUserResourceOption(this);
@@ -44784,16 +41084,6 @@ public partial class MySqlParser : Parser {
 		{
 		}
 		public override int RuleIndex { get { return RULE_userPasswordOption; } }
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterUserPasswordOption(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitUserPasswordOption(this);
-		}
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
@@ -44927,16 +41217,6 @@ public partial class MySqlParser : Parser {
 		}
 		public override int RuleIndex { get { return RULE_userLockOption; } }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterUserLockOption(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitUserLockOption(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
 			if (typedVisitor != null) return typedVisitor.VisitUserLockOption(this);
@@ -44991,16 +41271,6 @@ public partial class MySqlParser : Parser {
 		{
 		}
 		public override int RuleIndex { get { return RULE_privelegeClause; } }
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterPrivelegeClause(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitPrivelegeClause(this);
-		}
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
@@ -45121,16 +41391,6 @@ public partial class MySqlParser : Parser {
 		{
 		}
 		public override int RuleIndex { get { return RULE_privilege; } }
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterPrivilege(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitPrivilege(this);
-		}
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
@@ -45682,16 +41942,6 @@ public partial class MySqlParser : Parser {
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode STAR() { return GetToken(MySqlParser.STAR, 0); }
 		public DefiniteSchemaPrivLevelContext(PrivilegeLevelContext context) { CopyFrom(context); }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterDefiniteSchemaPrivLevel(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitDefiniteSchemaPrivLevel(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
 			if (typedVisitor != null) return typedVisitor.VisitDefiniteSchemaPrivLevel(this);
@@ -45706,16 +41956,6 @@ public partial class MySqlParser : Parser {
 			return GetRuleContext<DottedIdContext>(0);
 		}
 		public DefiniteFullTablePrivLevel2Context(PrivilegeLevelContext context) { CopyFrom(context); }
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterDefiniteFullTablePrivLevel2(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitDefiniteFullTablePrivLevel2(this);
-		}
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
@@ -45733,16 +41973,6 @@ public partial class MySqlParser : Parser {
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode DOT() { return GetToken(MySqlParser.DOT, 0); }
 		public DefiniteFullTablePrivLevelContext(PrivilegeLevelContext context) { CopyFrom(context); }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterDefiniteFullTablePrivLevel(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitDefiniteFullTablePrivLevel(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
 			if (typedVisitor != null) return typedVisitor.VisitDefiniteFullTablePrivLevel(this);
@@ -45757,16 +41987,6 @@ public partial class MySqlParser : Parser {
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode DOT() { return GetToken(MySqlParser.DOT, 0); }
 		public GlobalPrivLevelContext(PrivilegeLevelContext context) { CopyFrom(context); }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterGlobalPrivLevel(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitGlobalPrivLevel(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
 			if (typedVisitor != null) return typedVisitor.VisitGlobalPrivLevel(this);
@@ -45779,16 +41999,6 @@ public partial class MySqlParser : Parser {
 		}
 		public DefiniteTablePrivLevelContext(PrivilegeLevelContext context) { CopyFrom(context); }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterDefiniteTablePrivLevel(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitDefiniteTablePrivLevel(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
 			if (typedVisitor != null) return typedVisitor.VisitDefiniteTablePrivLevel(this);
@@ -45798,16 +42008,6 @@ public partial class MySqlParser : Parser {
 	public partial class CurrentSchemaPriviLevelContext : PrivilegeLevelContext {
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode STAR() { return GetToken(MySqlParser.STAR, 0); }
 		public CurrentSchemaPriviLevelContext(PrivilegeLevelContext context) { CopyFrom(context); }
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterCurrentSchemaPriviLevel(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitCurrentSchemaPriviLevel(this);
-		}
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
@@ -45915,16 +42115,6 @@ public partial class MySqlParser : Parser {
 		}
 		public override int RuleIndex { get { return RULE_renameUserClause; } }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterRenameUserClause(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitRenameUserClause(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
 			if (typedVisitor != null) return typedVisitor.VisitRenameUserClause(this);
@@ -45998,16 +42188,6 @@ public partial class MySqlParser : Parser {
 		{
 		}
 		public override int RuleIndex { get { return RULE_analyzeTable; } }
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterAnalyzeTable(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitAnalyzeTable(this);
-		}
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
@@ -46164,16 +42344,6 @@ public partial class MySqlParser : Parser {
 		}
 		public override int RuleIndex { get { return RULE_checkTable; } }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterCheckTable(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitCheckTable(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
 			if (typedVisitor != null) return typedVisitor.VisitCheckTable(this);
@@ -46236,16 +42406,6 @@ public partial class MySqlParser : Parser {
 		{
 		}
 		public override int RuleIndex { get { return RULE_checksumTable; } }
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterChecksumTable(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitChecksumTable(this);
-		}
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
@@ -46314,16 +42474,6 @@ public partial class MySqlParser : Parser {
 		{
 		}
 		public override int RuleIndex { get { return RULE_optimizeTable; } }
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterOptimizeTable(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitOptimizeTable(this);
-		}
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
@@ -46401,16 +42551,6 @@ public partial class MySqlParser : Parser {
 		{
 		}
 		public override int RuleIndex { get { return RULE_repairTable; } }
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterRepairTable(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitRepairTable(this);
-		}
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
@@ -46508,16 +42648,6 @@ public partial class MySqlParser : Parser {
 		}
 		public override int RuleIndex { get { return RULE_checkTableOption; } }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterCheckTableOption(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitCheckTableOption(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
 			if (typedVisitor != null) return typedVisitor.VisitCheckTableOption(this);
@@ -46613,16 +42743,6 @@ public partial class MySqlParser : Parser {
 		}
 		public override int RuleIndex { get { return RULE_createUdfunction; } }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterCreateUdfunction(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitCreateUdfunction(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
 			if (typedVisitor != null) return typedVisitor.VisitCreateUdfunction(this);
@@ -46697,16 +42817,6 @@ public partial class MySqlParser : Parser {
 		}
 		public override int RuleIndex { get { return RULE_installPlugin; } }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterInstallPlugin(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitInstallPlugin(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
 			if (typedVisitor != null) return typedVisitor.VisitInstallPlugin(this);
@@ -46755,16 +42865,6 @@ public partial class MySqlParser : Parser {
 		{
 		}
 		public override int RuleIndex { get { return RULE_uninstallPlugin; } }
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterUninstallPlugin(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitUninstallPlugin(this);
-		}
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
@@ -46817,16 +42917,6 @@ public partial class MySqlParser : Parser {
 		}
 		public SetTransactionContext(SetStatementContext context) { CopyFrom(context); }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterSetTransaction(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitSetTransaction(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
 			if (typedVisitor != null) return typedVisitor.VisitSetTransaction(this);
@@ -46843,16 +42933,6 @@ public partial class MySqlParser : Parser {
 		}
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode DEFAULT() { return GetToken(MySqlParser.DEFAULT, 0); }
 		public SetCharsetContext(SetStatementContext context) { CopyFrom(context); }
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterSetCharset(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitSetCharset(this);
-		}
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
@@ -46873,16 +42953,6 @@ public partial class MySqlParser : Parser {
 		}
 		public SetNamesContext(SetStatementContext context) { CopyFrom(context); }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterSetNames(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitSetNames(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
 			if (typedVisitor != null) return typedVisitor.VisitSetNames(this);
@@ -46895,16 +42965,6 @@ public partial class MySqlParser : Parser {
 		}
 		public SetPasswordContext(SetStatementContext context) { CopyFrom(context); }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterSetPassword(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitSetPassword(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
 			if (typedVisitor != null) return typedVisitor.VisitSetPassword(this);
@@ -46916,16 +42976,6 @@ public partial class MySqlParser : Parser {
 			return GetRuleContext<SetAutocommitStatementContext>(0);
 		}
 		public SetAutocommitContext(SetStatementContext context) { CopyFrom(context); }
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterSetAutocommit(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitSetAutocommit(this);
-		}
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
@@ -46960,16 +43010,6 @@ public partial class MySqlParser : Parser {
 			return GetToken(MySqlParser.COMMA, i);
 		}
 		public SetNewValueInsideTriggerContext(SetStatementContext context) { CopyFrom(context); }
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterSetNewValueInsideTrigger(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitSetNewValueInsideTrigger(this);
-		}
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
@@ -47008,16 +43048,6 @@ public partial class MySqlParser : Parser {
 			return GetToken(MySqlParser.COMMA, i);
 		}
 		public SetVariableContext(SetStatementContext context) { CopyFrom(context); }
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterSetVariable(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitSetVariable(this);
-		}
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
@@ -47377,16 +43407,6 @@ public partial class MySqlParser : Parser {
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode IN() { return GetToken(MySqlParser.IN, 0); }
 		public ShowOpenTablesContext(ShowStatementContext context) { CopyFrom(context); }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterShowOpenTables(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitShowOpenTables(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
 			if (typedVisitor != null) return typedVisitor.VisitShowOpenTables(this);
@@ -47399,16 +43419,6 @@ public partial class MySqlParser : Parser {
 			return GetRuleContext<ShowGlobalInfoClauseContext>(0);
 		}
 		public ShowGlobalInfoContext(ShowStatementContext context) { CopyFrom(context); }
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterShowGlobalInfo(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitShowGlobalInfo(this);
-		}
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
@@ -47431,16 +43441,6 @@ public partial class MySqlParser : Parser {
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode VIEW() { return GetToken(MySqlParser.VIEW, 0); }
 		public ShowCreateFullIdObjectContext(ShowStatementContext context) { CopyFrom(context); }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterShowCreateFullIdObject(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitShowCreateFullIdObject(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
 			if (typedVisitor != null) return typedVisitor.VisitShowCreateFullIdObject(this);
@@ -47455,16 +43455,6 @@ public partial class MySqlParser : Parser {
 			return GetRuleContext<UserNameContext>(0);
 		}
 		public ShowCreateUserContext(ShowStatementContext context) { CopyFrom(context); }
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterShowCreateUser(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitShowCreateUser(this);
-		}
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
@@ -47489,16 +43479,6 @@ public partial class MySqlParser : Parser {
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode COMMA() { return GetToken(MySqlParser.COMMA, 0); }
 		public ShowErrorsContext(ShowStatementContext context) { CopyFrom(context); }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterShowErrors(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitShowErrors(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
 			if (typedVisitor != null) return typedVisitor.VisitShowErrors(this);
@@ -47516,16 +43496,6 @@ public partial class MySqlParser : Parser {
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode WARNINGS() { return GetToken(MySqlParser.WARNINGS, 0); }
 		public ShowCountErrorsContext(ShowStatementContext context) { CopyFrom(context); }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterShowCountErrors(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitShowCountErrors(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
 			if (typedVisitor != null) return typedVisitor.VisitShowCountErrors(this);
@@ -47541,16 +43511,6 @@ public partial class MySqlParser : Parser {
 			return GetRuleContext<ShowFilterContext>(0);
 		}
 		public ShowObjectFilterContext(ShowStatementContext context) { CopyFrom(context); }
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterShowObjectFilter(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitShowObjectFilter(this);
-		}
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
@@ -47572,16 +43532,6 @@ public partial class MySqlParser : Parser {
 		}
 		public ShowCreateDbContext(ShowStatementContext context) { CopyFrom(context); }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterShowCreateDb(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitShowCreateDb(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
 			if (typedVisitor != null) return typedVisitor.VisitShowCreateDb(this);
@@ -47598,16 +43548,6 @@ public partial class MySqlParser : Parser {
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode STATUS() { return GetToken(MySqlParser.STATUS, 0); }
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode MUTEX() { return GetToken(MySqlParser.MUTEX, 0); }
 		public ShowEngineContext(ShowStatementContext context) { CopyFrom(context); }
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterShowEngine(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitShowEngine(this);
-		}
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
@@ -47630,16 +43570,6 @@ public partial class MySqlParser : Parser {
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode FROM() { return GetToken(MySqlParser.FROM, 0); }
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode IN() { return GetToken(MySqlParser.IN, 0); }
 		public ShowSchemaFilterContext(ShowStatementContext context) { CopyFrom(context); }
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterShowSchemaFilter(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitShowSchemaFilter(this);
-		}
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
@@ -47675,16 +43605,6 @@ public partial class MySqlParser : Parser {
 		}
 		public ShowIndexesContext(ShowStatementContext context) { CopyFrom(context); }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterShowIndexes(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitShowIndexes(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
 			if (typedVisitor != null) return typedVisitor.VisitShowIndexes(this);
@@ -47714,16 +43634,6 @@ public partial class MySqlParser : Parser {
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode COMMA() { return GetToken(MySqlParser.COMMA, 0); }
 		public ShowLogEventsContext(ShowStatementContext context) { CopyFrom(context); }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterShowLogEvents(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitShowLogEvents(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
 			if (typedVisitor != null) return typedVisitor.VisitShowLogEvents(this);
@@ -47737,16 +43647,6 @@ public partial class MySqlParser : Parser {
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode BINARY() { return GetToken(MySqlParser.BINARY, 0); }
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode MASTER() { return GetToken(MySqlParser.MASTER, 0); }
 		public ShowMasterLogsContext(ShowStatementContext context) { CopyFrom(context); }
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterShowMasterLogs(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitShowMasterLogs(this);
-		}
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
@@ -47763,16 +43663,6 @@ public partial class MySqlParser : Parser {
 		}
 		public ShowGrantsContext(ShowStatementContext context) { CopyFrom(context); }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterShowGrants(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitShowGrants(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
 			if (typedVisitor != null) return typedVisitor.VisitShowGrants(this);
@@ -47787,16 +43677,6 @@ public partial class MySqlParser : Parser {
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode CHANNEL() { return GetToken(MySqlParser.CHANNEL, 0); }
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode STRING_LITERAL() { return GetToken(MySqlParser.STRING_LITERAL, 0); }
 		public ShowSlaveStatusContext(ShowStatementContext context) { CopyFrom(context); }
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterShowSlaveStatus(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitShowSlaveStatus(this);
-		}
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
@@ -47814,16 +43694,6 @@ public partial class MySqlParser : Parser {
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode FUNCTION() { return GetToken(MySqlParser.FUNCTION, 0); }
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode PROCEDURE() { return GetToken(MySqlParser.PROCEDURE, 0); }
 		public ShowRoutineContext(ShowStatementContext context) { CopyFrom(context); }
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterShowRoutine(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitShowRoutine(this);
-		}
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
@@ -47858,16 +43728,6 @@ public partial class MySqlParser : Parser {
 		}
 		public ShowProfileContext(ShowStatementContext context) { CopyFrom(context); }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterShowProfile(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitShowProfile(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
 			if (typedVisitor != null) return typedVisitor.VisitShowProfile(this);
@@ -47900,16 +43760,6 @@ public partial class MySqlParser : Parser {
 			return GetRuleContext<ShowFilterContext>(0);
 		}
 		public ShowColumnsContext(ShowStatementContext context) { CopyFrom(context); }
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterShowColumns(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitShowColumns(this);
-		}
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
@@ -48578,16 +44428,6 @@ public partial class MySqlParser : Parser {
 		{
 		}
 		public override int RuleIndex { get { return RULE_variableClause; } }
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterVariableClause(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitVariableClause(this);
-		}
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
@@ -49508,16 +45348,6 @@ public partial class MySqlParser : Parser {
 		}
 		public override int RuleIndex { get { return RULE_showCommonEntity; } }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterShowCommonEntity(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitShowCommonEntity(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
 			if (typedVisitor != null) return typedVisitor.VisitShowCommonEntity(this);
@@ -49644,16 +45474,6 @@ public partial class MySqlParser : Parser {
 		}
 		public override int RuleIndex { get { return RULE_showFilter; } }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterShowFilter(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitShowFilter(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
 			if (typedVisitor != null) return typedVisitor.VisitShowFilter(this);
@@ -49721,16 +45541,6 @@ public partial class MySqlParser : Parser {
 		{
 		}
 		public override int RuleIndex { get { return RULE_showGlobalInfoClause; } }
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterShowGlobalInfoClause(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitShowGlobalInfoClause(this);
-		}
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
@@ -49865,16 +45675,6 @@ public partial class MySqlParser : Parser {
 		}
 		public override int RuleIndex { get { return RULE_showSchemaEntity; } }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterShowSchemaEntity(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitShowSchemaEntity(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
 			if (typedVisitor != null) return typedVisitor.VisitShowSchemaEntity(this);
@@ -49965,16 +45765,6 @@ public partial class MySqlParser : Parser {
 		{
 		}
 		public override int RuleIndex { get { return RULE_showProfileType; } }
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterShowProfileType(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitShowProfileType(this);
-		}
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
@@ -50084,16 +45874,6 @@ public partial class MySqlParser : Parser {
 		}
 		public override int RuleIndex { get { return RULE_binlogStatement; } }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterBinlogStatement(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitBinlogStatement(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
 			if (typedVisitor != null) return typedVisitor.VisitBinlogStatement(this);
@@ -50155,16 +45935,6 @@ public partial class MySqlParser : Parser {
 		{
 		}
 		public override int RuleIndex { get { return RULE_cacheIndexStatement; } }
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterCacheIndexStatement(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitCacheIndexStatement(this);
-		}
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
@@ -51092,16 +46862,6 @@ public partial class MySqlParser : Parser {
 		}
 		public override int RuleIndex { get { return RULE_flushStatement; } }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterFlushStatement(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitFlushStatement(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
 			if (typedVisitor != null) return typedVisitor.VisitFlushStatement(this);
@@ -51184,16 +46944,6 @@ public partial class MySqlParser : Parser {
 		{
 		}
 		public override int RuleIndex { get { return RULE_killStatement; } }
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterKillStatement(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitKillStatement(this);
-		}
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
@@ -51278,16 +47028,6 @@ public partial class MySqlParser : Parser {
 		}
 		public override int RuleIndex { get { return RULE_loadIndexIntoCache; } }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterLoadIndexIntoCache(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitLoadIndexIntoCache(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
 			if (typedVisitor != null) return typedVisitor.VisitLoadIndexIntoCache(this);
@@ -51352,16 +47092,6 @@ public partial class MySqlParser : Parser {
 		}
 		public override int RuleIndex { get { return RULE_resetStatement; } }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterResetStatement(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitResetStatement(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
 			if (typedVisitor != null) return typedVisitor.VisitResetStatement(this);
@@ -51402,16 +47132,6 @@ public partial class MySqlParser : Parser {
 		{
 		}
 		public override int RuleIndex { get { return RULE_shutdownStatement; } }
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterShutdownStatement(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitShutdownStatement(this);
-		}
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
@@ -51459,16 +47179,6 @@ public partial class MySqlParser : Parser {
 		{
 		}
 		public override int RuleIndex { get { return RULE_tableIndexes; } }
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterTableIndexes(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitTableIndexes(this);
-		}
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
@@ -51555,16 +47265,6 @@ public partial class MySqlParser : Parser {
 		}
 		public TableFlushOptionContext(FlushOptionContext context) { CopyFrom(context); }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterTableFlushOption(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitTableFlushOption(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
 			if (typedVisitor != null) return typedVisitor.VisitTableFlushOption(this);
@@ -51578,16 +47278,6 @@ public partial class MySqlParser : Parser {
 			return GetRuleContext<ChannelOptionContext>(0);
 		}
 		public ChannelFlushOptionContext(FlushOptionContext context) { CopyFrom(context); }
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterChannelFlushOption(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitChannelFlushOption(this);
-		}
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
@@ -51616,16 +47306,6 @@ public partial class MySqlParser : Parser {
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode RELAY() { return GetToken(MySqlParser.RELAY, 0); }
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode SLOW() { return GetToken(MySqlParser.SLOW, 0); }
 		public SimpleFlushOptionContext(FlushOptionContext context) { CopyFrom(context); }
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterSimpleFlushOption(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitSimpleFlushOption(this);
-		}
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
@@ -51828,16 +47508,6 @@ public partial class MySqlParser : Parser {
 		}
 		public override int RuleIndex { get { return RULE_flushTableOption; } }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterFlushTableOption(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitFlushTableOption(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
 			if (typedVisitor != null) return typedVisitor.VisitFlushTableOption(this);
@@ -51920,16 +47590,6 @@ public partial class MySqlParser : Parser {
 		{
 		}
 		public override int RuleIndex { get { return RULE_loadedTableIndexes; } }
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterLoadedTableIndexes(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitLoadedTableIndexes(this);
-		}
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
@@ -52876,16 +48536,6 @@ public partial class MySqlParser : Parser {
 		}
 		public override int RuleIndex { get { return RULE_simpleDescribeStatement; } }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterSimpleDescribeStatement(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitSimpleDescribeStatement(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
 			if (typedVisitor != null) return typedVisitor.VisitSimpleDescribeStatement(this);
@@ -52963,16 +48613,6 @@ public partial class MySqlParser : Parser {
 		{
 		}
 		public override int RuleIndex { get { return RULE_fullDescribeStatement; } }
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterFullDescribeStatement(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitFullDescribeStatement(this);
-		}
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
@@ -53053,16 +48693,6 @@ public partial class MySqlParser : Parser {
 		}
 		public override int RuleIndex { get { return RULE_helpStatement; } }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterHelpStatement(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitHelpStatement(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
 			if (typedVisitor != null) return typedVisitor.VisitHelpStatement(this);
@@ -53104,16 +48734,6 @@ public partial class MySqlParser : Parser {
 		{
 		}
 		public override int RuleIndex { get { return RULE_useStatement; } }
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterUseStatement(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitUseStatement(this);
-		}
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
@@ -53171,16 +48791,6 @@ public partial class MySqlParser : Parser {
 		{
 		}
 		public override int RuleIndex { get { return RULE_signalStatement; } }
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterSignalStatement(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitSignalStatement(this);
-		}
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
@@ -53303,16 +48913,6 @@ public partial class MySqlParser : Parser {
 		{
 		}
 		public override int RuleIndex { get { return RULE_resignalStatement; } }
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterResignalStatement(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitResignalStatement(this);
-		}
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
@@ -53499,16 +49099,6 @@ public partial class MySqlParser : Parser {
 		}
 		public override int RuleIndex { get { return RULE_signalConditionInformation; } }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterSignalConditionInformation(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitSignalConditionInformation(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
 			if (typedVisitor != null) return typedVisitor.VisitSignalConditionInformation(this);
@@ -53618,16 +49208,6 @@ public partial class MySqlParser : Parser {
 		{
 		}
 		public override int RuleIndex { get { return RULE_diagnosticsStatement; } }
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterDiagnosticsStatement(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitDiagnosticsStatement(this);
-		}
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
@@ -55450,16 +51030,6 @@ public partial class MySqlParser : Parser {
 		}
 		public override int RuleIndex { get { return RULE_diagnosticsConditionInformationName; } }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterDiagnosticsConditionInformationName(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitDiagnosticsConditionInformationName(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
 			if (typedVisitor != null) return typedVisitor.VisitDiagnosticsConditionInformationName(this);
@@ -55527,16 +51097,6 @@ public partial class MySqlParser : Parser {
 		}
 		public DescribeStatementsContext(DescribeObjectClauseContext context) { CopyFrom(context); }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterDescribeStatements(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitDescribeStatements(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
 			if (typedVisitor != null) return typedVisitor.VisitDescribeStatements(this);
@@ -55550,16 +51110,6 @@ public partial class MySqlParser : Parser {
 			return GetRuleContext<UidContext>(0);
 		}
 		public DescribeConnectionContext(DescribeObjectClauseContext context) { CopyFrom(context); }
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterDescribeConnection(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitDescribeConnection(this);
-		}
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
@@ -55666,16 +51216,6 @@ public partial class MySqlParser : Parser {
 		}
 		public override int RuleIndex { get { return RULE_fullId; } }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterFullId(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitFullId(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
 			if (typedVisitor != null) return typedVisitor.VisitFullId(this);
@@ -55733,16 +51273,6 @@ public partial class MySqlParser : Parser {
 		}
 		public override int RuleIndex { get { return RULE_tableName; } }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterTableName(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitTableName(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
 			if (typedVisitor != null) return typedVisitor.VisitTableName(this);
@@ -55787,16 +51317,6 @@ public partial class MySqlParser : Parser {
 		{
 		}
 		public override int RuleIndex { get { return RULE_fullColumnName; } }
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterFullColumnName(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitFullColumnName(this);
-		}
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
@@ -55893,16 +51413,6 @@ public partial class MySqlParser : Parser {
 		{
 		}
 		public override int RuleIndex { get { return RULE_indexColumnName; } }
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterIndexColumnName(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitIndexColumnName(this);
-		}
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
@@ -56005,16 +51515,6 @@ public partial class MySqlParser : Parser {
 		}
 		public override int RuleIndex { get { return RULE_userName; } }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterUserName(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitUserName(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
 			if (typedVisitor != null) return typedVisitor.VisitUserName(this);
@@ -56060,16 +51560,6 @@ public partial class MySqlParser : Parser {
 		{
 		}
 		public override int RuleIndex { get { return RULE_mysqlVariable; } }
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterMysqlVariable(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitMysqlVariable(this);
-		}
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
@@ -56120,16 +51610,6 @@ public partial class MySqlParser : Parser {
 		{
 		}
 		public override int RuleIndex { get { return RULE_charsetName; } }
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterCharsetName(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitCharsetName(this);
-		}
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
@@ -56198,16 +51678,6 @@ public partial class MySqlParser : Parser {
 		}
 		public override int RuleIndex { get { return RULE_collationName; } }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterCollationName(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitCollationName(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
 			if (typedVisitor != null) return typedVisitor.VisitCollationName(this);
@@ -56273,16 +51743,6 @@ public partial class MySqlParser : Parser {
 		}
 		public override int RuleIndex { get { return RULE_engineName; } }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterEngineName(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitEngineName(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
 			if (typedVisitor != null) return typedVisitor.VisitEngineName(this);
@@ -56340,16 +51800,6 @@ public partial class MySqlParser : Parser {
 		{
 		}
 		public override int RuleIndex { get { return RULE_uuidSet; } }
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterUuidSet(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitUuidSet(this);
-		}
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
@@ -56440,16 +51890,6 @@ public partial class MySqlParser : Parser {
 		}
 		public override int RuleIndex { get { return RULE_xid; } }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterXid(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitXid(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
 			if (typedVisitor != null) return typedVisitor.VisitXid(this);
@@ -56516,16 +51956,6 @@ public partial class MySqlParser : Parser {
 		{
 		}
 		public override int RuleIndex { get { return RULE_xuidStringId; } }
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterXuidStringId(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitXuidStringId(this);
-		}
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
@@ -56602,16 +52032,6 @@ public partial class MySqlParser : Parser {
 		}
 		public override int RuleIndex { get { return RULE_authPlugin; } }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterAuthPlugin(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitAuthPlugin(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
 			if (typedVisitor != null) return typedVisitor.VisitAuthPlugin(this);
@@ -56665,16 +52085,6 @@ public partial class MySqlParser : Parser {
 		{
 		}
 		public override int RuleIndex { get { return RULE_uid; } }
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterUid(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitUid(this);
-		}
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
@@ -56756,16 +52166,6 @@ public partial class MySqlParser : Parser {
 		{
 		}
 		public override int RuleIndex { get { return RULE_simpleId; } }
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterSimpleId(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitSimpleId(this);
-		}
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
@@ -56870,16 +52270,6 @@ public partial class MySqlParser : Parser {
 		}
 		public override int RuleIndex { get { return RULE_dottedId; } }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterDottedId(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitDottedId(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
 			if (typedVisitor != null) return typedVisitor.VisitDottedId(this);
@@ -56938,16 +52328,6 @@ public partial class MySqlParser : Parser {
 		}
 		public override int RuleIndex { get { return RULE_decimalLiteral; } }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterDecimalLiteral(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitDecimalLiteral(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
 			if (typedVisitor != null) return typedVisitor.VisitDecimalLiteral(this);
@@ -56995,16 +52375,6 @@ public partial class MySqlParser : Parser {
 		{
 		}
 		public override int RuleIndex { get { return RULE_fileSizeLiteral; } }
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterFileSizeLiteral(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitFileSizeLiteral(this);
-		}
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
@@ -57070,16 +52440,6 @@ public partial class MySqlParser : Parser {
 		{
 		}
 		public override int RuleIndex { get { return RULE_stringLiteral; } }
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterStringLiteral(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitStringLiteral(this);
-		}
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
@@ -57220,16 +52580,6 @@ public partial class MySqlParser : Parser {
 		}
 		public override int RuleIndex { get { return RULE_booleanLiteral; } }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterBooleanLiteral(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitBooleanLiteral(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
 			if (typedVisitor != null) return typedVisitor.VisitBooleanLiteral(this);
@@ -57275,16 +52625,6 @@ public partial class MySqlParser : Parser {
 		{
 		}
 		public override int RuleIndex { get { return RULE_hexadecimalLiteral; } }
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterHexadecimalLiteral(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitHexadecimalLiteral(this);
-		}
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
@@ -57335,16 +52675,6 @@ public partial class MySqlParser : Parser {
 		{
 		}
 		public override int RuleIndex { get { return RULE_nullNotnull; } }
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterNullNotnull(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitNullNotnull(this);
-		}
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
@@ -57418,16 +52748,6 @@ public partial class MySqlParser : Parser {
 		{
 		}
 		public override int RuleIndex { get { return RULE_constant; } }
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterConstant(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitConstant(this);
-		}
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
@@ -57560,16 +52880,6 @@ public partial class MySqlParser : Parser {
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode GEOMETRY() { return GetToken(MySqlParser.GEOMETRY, 0); }
 		public SpatialDataTypeContext(DataTypeContext context) { CopyFrom(context); }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterSpatialDataType(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitSpatialDataType(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
 			if (typedVisitor != null) return typedVisitor.VisitSpatialDataType(this);
@@ -57580,16 +52890,6 @@ public partial class MySqlParser : Parser {
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode LONG() { return GetToken(MySqlParser.LONG, 0); }
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode VARBINARY() { return GetToken(MySqlParser.VARBINARY, 0); }
 		public LongVarbinaryDataTypeContext(DataTypeContext context) { CopyFrom(context); }
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterLongVarbinaryDataType(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitLongVarbinaryDataType(this);
-		}
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
@@ -57613,16 +52913,6 @@ public partial class MySqlParser : Parser {
 		}
 		public CollectionDataTypeContext(DataTypeContext context) { CopyFrom(context); }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterCollectionDataType(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitCollectionDataType(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
 			if (typedVisitor != null) return typedVisitor.VisitCollectionDataType(this);
@@ -57640,16 +52930,6 @@ public partial class MySqlParser : Parser {
 		}
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode BINARY() { return GetToken(MySqlParser.BINARY, 0); }
 		public NationalVaryingStringDataTypeContext(DataTypeContext context) { CopyFrom(context); }
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterNationalVaryingStringDataType(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitNationalVaryingStringDataType(this);
-		}
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
@@ -57712,16 +52992,6 @@ public partial class MySqlParser : Parser {
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode YEAR() { return GetToken(MySqlParser.YEAR, 0); }
 		public DimensionDataTypeContext(DataTypeContext context) { CopyFrom(context); }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterDimensionDataType(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitDimensionDataType(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
 			if (typedVisitor != null) return typedVisitor.VisitDimensionDataType(this);
@@ -57760,16 +53030,6 @@ public partial class MySqlParser : Parser {
 		}
 		public StringDataTypeContext(DataTypeContext context) { CopyFrom(context); }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterStringDataType(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitStringDataType(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
 			if (typedVisitor != null) return typedVisitor.VisitStringDataType(this);
@@ -57793,16 +53053,6 @@ public partial class MySqlParser : Parser {
 		}
 		public LongVarcharDataTypeContext(DataTypeContext context) { CopyFrom(context); }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterLongVarcharDataType(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitLongVarcharDataType(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
 			if (typedVisitor != null) return typedVisitor.VisitLongVarcharDataType(this);
@@ -57821,16 +53071,6 @@ public partial class MySqlParser : Parser {
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode NCHAR() { return GetToken(MySqlParser.NCHAR, 0); }
 		public NationalStringDataTypeContext(DataTypeContext context) { CopyFrom(context); }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterNationalStringDataType(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitNationalStringDataType(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
 			if (typedVisitor != null) return typedVisitor.VisitNationalStringDataType(this);
@@ -57847,16 +53087,6 @@ public partial class MySqlParser : Parser {
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode BOOLEAN() { return GetToken(MySqlParser.BOOLEAN, 0); }
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode SERIAL() { return GetToken(MySqlParser.SERIAL, 0); }
 		public SimpleDataTypeContext(DataTypeContext context) { CopyFrom(context); }
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterSimpleDataType(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitSimpleDataType(this);
-		}
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
@@ -58439,16 +53669,6 @@ public partial class MySqlParser : Parser {
 		}
 		public override int RuleIndex { get { return RULE_collectionOptions; } }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterCollectionOptions(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitCollectionOptions(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
 			if (typedVisitor != null) return typedVisitor.VisitCollectionOptions(this);
@@ -58531,16 +53751,6 @@ public partial class MySqlParser : Parser {
 		{
 		}
 		public override int RuleIndex { get { return RULE_convertedDataType; } }
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterConvertedDataType(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitConvertedDataType(this);
-		}
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
@@ -58710,16 +53920,6 @@ public partial class MySqlParser : Parser {
 		}
 		public override int RuleIndex { get { return RULE_lengthOneDimension; } }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterLengthOneDimension(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitLengthOneDimension(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
 			if (typedVisitor != null) return typedVisitor.VisitLengthOneDimension(this);
@@ -58768,16 +53968,6 @@ public partial class MySqlParser : Parser {
 		{
 		}
 		public override int RuleIndex { get { return RULE_lengthTwoDimension; } }
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterLengthTwoDimension(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitLengthTwoDimension(this);
-		}
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
@@ -58831,16 +54021,6 @@ public partial class MySqlParser : Parser {
 		{
 		}
 		public override int RuleIndex { get { return RULE_lengthTwoOptionalDimension; } }
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterLengthTwoOptionalDimension(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitLengthTwoOptionalDimension(this);
-		}
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
@@ -58904,16 +54084,6 @@ public partial class MySqlParser : Parser {
 		{
 		}
 		public override int RuleIndex { get { return RULE_uidList; } }
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterUidList(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitUidList(this);
-		}
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
@@ -58979,16 +54149,6 @@ public partial class MySqlParser : Parser {
 		{
 		}
 		public override int RuleIndex { get { return RULE_tables; } }
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterTables(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitTables(this);
-		}
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
@@ -59057,16 +54217,6 @@ public partial class MySqlParser : Parser {
 		}
 		public override int RuleIndex { get { return RULE_indexColumnNames; } }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterIndexColumnNames(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitIndexColumnNames(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
 			if (typedVisitor != null) return typedVisitor.VisitIndexColumnNames(this);
@@ -59134,16 +54284,6 @@ public partial class MySqlParser : Parser {
 		}
 		public override int RuleIndex { get { return RULE_expressions; } }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterExpressions(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitExpressions(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
 			if (typedVisitor != null) return typedVisitor.VisitExpressions(this);
@@ -59206,16 +54346,6 @@ public partial class MySqlParser : Parser {
 		{
 		}
 		public override int RuleIndex { get { return RULE_expressionsWithDefaults; } }
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterExpressionsWithDefaults(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitExpressionsWithDefaults(this);
-		}
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
@@ -59280,16 +54410,6 @@ public partial class MySqlParser : Parser {
 		}
 		public override int RuleIndex { get { return RULE_constants; } }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterConstants(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitConstants(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
 			if (typedVisitor != null) return typedVisitor.VisitConstants(this);
@@ -59351,16 +54471,6 @@ public partial class MySqlParser : Parser {
 		}
 		public override int RuleIndex { get { return RULE_simpleStrings; } }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterSimpleStrings(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitSimpleStrings(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
 			if (typedVisitor != null) return typedVisitor.VisitSimpleStrings(this);
@@ -59421,16 +54531,6 @@ public partial class MySqlParser : Parser {
 		{
 		}
 		public override int RuleIndex { get { return RULE_userVariables; } }
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterUserVariables(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitUserVariables(this);
-		}
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
@@ -59504,16 +54604,6 @@ public partial class MySqlParser : Parser {
 		{
 		}
 		public override int RuleIndex { get { return RULE_defaultValue; } }
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterDefaultValue(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitDefaultValue(this);
-		}
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
@@ -59613,16 +54703,6 @@ public partial class MySqlParser : Parser {
 		{
 		}
 		public override int RuleIndex { get { return RULE_currentTimestamp; } }
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterCurrentTimestamp(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitCurrentTimestamp(this);
-		}
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
@@ -59726,16 +54806,6 @@ public partial class MySqlParser : Parser {
 		}
 		public override int RuleIndex { get { return RULE_expressionOrDefault; } }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterExpressionOrDefault(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitExpressionOrDefault(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
 			if (typedVisitor != null) return typedVisitor.VisitExpressionOrDefault(this);
@@ -59787,16 +54857,6 @@ public partial class MySqlParser : Parser {
 		}
 		public override int RuleIndex { get { return RULE_ifExists; } }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterIfExists(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitIfExists(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
 			if (typedVisitor != null) return typedVisitor.VisitIfExists(this);
@@ -59837,16 +54897,6 @@ public partial class MySqlParser : Parser {
 		{
 		}
 		public override int RuleIndex { get { return RULE_ifNotExists; } }
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterIfNotExists(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitIfNotExists(this);
-		}
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
@@ -59899,16 +54949,6 @@ public partial class MySqlParser : Parser {
 		}
 		public SpecificFunctionCallContext(FunctionCallContext context) { CopyFrom(context); }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterSpecificFunctionCall(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitSpecificFunctionCall(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
 			if (typedVisitor != null) return typedVisitor.VisitSpecificFunctionCall(this);
@@ -59920,16 +54960,6 @@ public partial class MySqlParser : Parser {
 			return GetRuleContext<PasswordFunctionClauseContext>(0);
 		}
 		public PasswordFunctionCallContext(FunctionCallContext context) { CopyFrom(context); }
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterPasswordFunctionCall(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitPasswordFunctionCall(this);
-		}
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
@@ -59948,16 +54978,6 @@ public partial class MySqlParser : Parser {
 		}
 		public UdfFunctionCallContext(FunctionCallContext context) { CopyFrom(context); }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterUdfFunctionCall(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitUdfFunctionCall(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
 			if (typedVisitor != null) return typedVisitor.VisitUdfFunctionCall(this);
@@ -59970,16 +54990,6 @@ public partial class MySqlParser : Parser {
 		}
 		public NonAggregateFunctionCallContext(FunctionCallContext context) { CopyFrom(context); }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterNonAggregateFunctionCall(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitNonAggregateFunctionCall(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
 			if (typedVisitor != null) return typedVisitor.VisitNonAggregateFunctionCall(this);
@@ -59991,16 +55001,6 @@ public partial class MySqlParser : Parser {
 			return GetRuleContext<AggregateWindowedFunctionContext>(0);
 		}
 		public AggregateFunctionCallContext(FunctionCallContext context) { CopyFrom(context); }
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterAggregateFunctionCall(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitAggregateFunctionCall(this);
-		}
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
@@ -60018,16 +55018,6 @@ public partial class MySqlParser : Parser {
 			return GetRuleContext<FunctionArgsContext>(0);
 		}
 		public ScalarFunctionCallContext(FunctionCallContext context) { CopyFrom(context); }
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterScalarFunctionCall(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitScalarFunctionCall(this);
-		}
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
@@ -60168,16 +55158,6 @@ public partial class MySqlParser : Parser {
 		}
 		public PositionFunctionCallContext(SpecificFunctionContext context) { CopyFrom(context); }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterPositionFunctionCall(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitPositionFunctionCall(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
 			if (typedVisitor != null) return typedVisitor.VisitPositionFunctionCall(this);
@@ -60210,16 +55190,6 @@ public partial class MySqlParser : Parser {
 			return GetRuleContext<ExpressionContext>(i);
 		}
 		public TrimFunctionCallContext(SpecificFunctionContext context) { CopyFrom(context); }
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterTrimFunctionCall(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitTrimFunctionCall(this);
-		}
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
@@ -60267,16 +55237,6 @@ public partial class MySqlParser : Parser {
 		}
 		public JsonValueFunctionCallContext(SpecificFunctionContext context) { CopyFrom(context); }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterJsonValueFunctionCall(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitJsonValueFunctionCall(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
 			if (typedVisitor != null) return typedVisitor.VisitJsonValueFunctionCall(this);
@@ -60298,16 +55258,6 @@ public partial class MySqlParser : Parser {
 			return GetRuleContext<FunctionArgContext>(0);
 		}
 		public CaseFunctionCallContext(SpecificFunctionContext context) { CopyFrom(context); }
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterCaseFunctionCall(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitCaseFunctionCall(this);
-		}
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
@@ -60332,16 +55282,6 @@ public partial class MySqlParser : Parser {
 			return GetRuleContext<ExpressionContext>(0);
 		}
 		public ExtractFunctionCallContext(SpecificFunctionContext context) { CopyFrom(context); }
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterExtractFunctionCall(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitExtractFunctionCall(this);
-		}
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
@@ -60369,16 +55309,6 @@ public partial class MySqlParser : Parser {
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode AS() { return GetToken(MySqlParser.AS, 0); }
 		public DataTypeFunctionCallContext(SpecificFunctionContext context) { CopyFrom(context); }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterDataTypeFunctionCall(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitDataTypeFunctionCall(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
 			if (typedVisitor != null) return typedVisitor.VisitDataTypeFunctionCall(this);
@@ -60393,16 +55323,6 @@ public partial class MySqlParser : Parser {
 		}
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode RR_BRACKET() { return GetToken(MySqlParser.RR_BRACKET, 0); }
 		public ValuesFunctionCallContext(SpecificFunctionContext context) { CopyFrom(context); }
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterValuesFunctionCall(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitValuesFunctionCall(this);
-		}
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
@@ -60429,16 +55349,6 @@ public partial class MySqlParser : Parser {
 		}
 		public CaseExpressionFunctionCallContext(SpecificFunctionContext context) { CopyFrom(context); }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterCaseExpressionFunctionCall(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitCaseExpressionFunctionCall(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
 			if (typedVisitor != null) return typedVisitor.VisitCaseExpressionFunctionCall(this);
@@ -60454,16 +55364,6 @@ public partial class MySqlParser : Parser {
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode LR_BRACKET() { return GetToken(MySqlParser.LR_BRACKET, 0); }
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode RR_BRACKET() { return GetToken(MySqlParser.RR_BRACKET, 0); }
 		public SimpleFunctionCallContext(SpecificFunctionContext context) { CopyFrom(context); }
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterSimpleFunctionCall(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitSimpleFunctionCall(this);
-		}
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
@@ -60483,16 +55383,6 @@ public partial class MySqlParser : Parser {
 			return GetRuleContext<CharsetNameContext>(0);
 		}
 		public CharFunctionCallContext(SpecificFunctionContext context) { CopyFrom(context); }
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterCharFunctionCall(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitCharFunctionCall(this);
-		}
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
@@ -60528,16 +55418,6 @@ public partial class MySqlParser : Parser {
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode BINARY() { return GetToken(MySqlParser.BINARY, 0); }
 		public WeightFunctionCallContext(SpecificFunctionContext context) { CopyFrom(context); }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterWeightFunctionCall(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitWeightFunctionCall(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
 			if (typedVisitor != null) return typedVisitor.VisitWeightFunctionCall(this);
@@ -60557,16 +55437,6 @@ public partial class MySqlParser : Parser {
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode TIME() { return GetToken(MySqlParser.TIME, 0); }
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode DATETIME() { return GetToken(MySqlParser.DATETIME, 0); }
 		public GetFormatFunctionCallContext(SpecificFunctionContext context) { CopyFrom(context); }
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterGetFormatFunctionCall(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitGetFormatFunctionCall(this);
-		}
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
@@ -60603,16 +55473,6 @@ public partial class MySqlParser : Parser {
 		}
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode FOR() { return GetToken(MySqlParser.FOR, 0); }
 		public SubstrFunctionCallContext(SpecificFunctionContext context) { CopyFrom(context); }
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterSubstrFunctionCall(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitSubstrFunctionCall(this);
-		}
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
@@ -61314,16 +56174,6 @@ public partial class MySqlParser : Parser {
 		}
 		public override int RuleIndex { get { return RULE_caseFuncAlternative; } }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterCaseFuncAlternative(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitCaseFuncAlternative(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
 			if (typedVisitor != null) return typedVisitor.VisitCaseFuncAlternative(this);
@@ -61384,16 +56234,6 @@ public partial class MySqlParser : Parser {
 		}
 		public LevelWeightRangeContext(LevelsInWeightStringContext context) { CopyFrom(context); }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterLevelWeightRange(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitLevelWeightRange(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
 			if (typedVisitor != null) return typedVisitor.VisitLevelWeightRange(this);
@@ -61413,16 +56253,6 @@ public partial class MySqlParser : Parser {
 			return GetToken(MySqlParser.COMMA, i);
 		}
 		public LevelWeightListContext(LevelsInWeightStringContext context) { CopyFrom(context); }
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterLevelWeightList(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitLevelWeightList(this);
-		}
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
@@ -61506,16 +56336,6 @@ public partial class MySqlParser : Parser {
 		{
 		}
 		public override int RuleIndex { get { return RULE_levelInWeightListElement; } }
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterLevelInWeightListElement(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitLevelInWeightListElement(this);
-		}
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
@@ -61618,16 +56438,6 @@ public partial class MySqlParser : Parser {
 		{
 		}
 		public override int RuleIndex { get { return RULE_aggregateWindowedFunction; } }
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterAggregateWindowedFunction(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitAggregateWindowedFunction(this);
-		}
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
@@ -61916,16 +56726,6 @@ public partial class MySqlParser : Parser {
 		}
 		public override int RuleIndex { get { return RULE_nonAggregateWindowedFunction; } }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterNonAggregateWindowedFunction(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitNonAggregateWindowedFunction(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
 			if (typedVisitor != null) return typedVisitor.VisitNonAggregateWindowedFunction(this);
@@ -62100,16 +56900,6 @@ public partial class MySqlParser : Parser {
 		{
 		}
 		public override int RuleIndex { get { return RULE_overClause; } }
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterOverClause(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitOverClause(this);
-		}
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
@@ -63008,16 +57798,6 @@ public partial class MySqlParser : Parser {
 		}
 		public override int RuleIndex { get { return RULE_windowSpec; } }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterWindowSpec(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitWindowSpec(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
 			if (typedVisitor != null) return typedVisitor.VisitWindowSpec(this);
@@ -63096,16 +57876,6 @@ public partial class MySqlParser : Parser {
 		}
 		public override int RuleIndex { get { return RULE_windowName; } }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterWindowName(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitWindowName(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
 			if (typedVisitor != null) return typedVisitor.VisitWindowName(this);
@@ -63148,16 +57918,6 @@ public partial class MySqlParser : Parser {
 		}
 		public override int RuleIndex { get { return RULE_frameClause; } }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterFrameClause(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitFrameClause(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
 			if (typedVisitor != null) return typedVisitor.VisitFrameClause(this);
@@ -63197,16 +57957,6 @@ public partial class MySqlParser : Parser {
 		{
 		}
 		public override int RuleIndex { get { return RULE_frameUnits; } }
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterFrameUnits(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitFrameUnits(this);
-		}
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
@@ -63257,16 +58007,6 @@ public partial class MySqlParser : Parser {
 		{
 		}
 		public override int RuleIndex { get { return RULE_frameExtent; } }
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterFrameExtent(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitFrameExtent(this);
-		}
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
@@ -63325,16 +58065,6 @@ public partial class MySqlParser : Parser {
 		}
 		public override int RuleIndex { get { return RULE_frameBetween; } }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterFrameBetween(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitFrameBetween(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
 			if (typedVisitor != null) return typedVisitor.VisitFrameBetween(this);
@@ -63384,16 +58114,6 @@ public partial class MySqlParser : Parser {
 		{
 		}
 		public override int RuleIndex { get { return RULE_frameRange; } }
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterFrameRange(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitFrameRange(this);
-		}
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
@@ -63484,16 +58204,6 @@ public partial class MySqlParser : Parser {
 		}
 		public override int RuleIndex { get { return RULE_partitionClause; } }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterPartitionClause(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitPartitionClause(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
 			if (typedVisitor != null) return typedVisitor.VisitPartitionClause(this);
@@ -63575,16 +58285,6 @@ public partial class MySqlParser : Parser {
 		{
 		}
 		public override int RuleIndex { get { return RULE_scalarFunctionName; } }
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterScalarFunctionName(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitScalarFunctionName(this);
-		}
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
@@ -64153,16 +58853,6 @@ public partial class MySqlParser : Parser {
 		}
 		public override int RuleIndex { get { return RULE_passwordFunctionClause; } }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterPasswordFunctionClause(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitPasswordFunctionClause(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
 			if (typedVisitor != null) return typedVisitor.VisitPasswordFunctionClause(this);
@@ -64241,16 +58931,6 @@ public partial class MySqlParser : Parser {
 		{
 		}
 		public override int RuleIndex { get { return RULE_functionArgs; } }
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterFunctionArgs(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitFunctionArgs(this);
-		}
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
@@ -64369,16 +59049,6 @@ public partial class MySqlParser : Parser {
 		}
 		public override int RuleIndex { get { return RULE_functionArg; } }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterFunctionArg(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitFunctionArg(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
 			if (typedVisitor != null) return typedVisitor.VisitFunctionArg(this);
@@ -64459,16 +59129,6 @@ public partial class MySqlParser : Parser {
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode NOT() { return GetToken(MySqlParser.NOT, 0); }
 		public IsExpressionContext(ExpressionContext context) { CopyFrom(context); }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterIsExpression(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitIsExpression(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
 			if (typedVisitor != null) return typedVisitor.VisitIsExpression(this);
@@ -64483,16 +59143,6 @@ public partial class MySqlParser : Parser {
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode NOT() { return GetToken(MySqlParser.NOT, 0); }
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode EXCLAMATION_SYMBOL() { return GetToken(MySqlParser.EXCLAMATION_SYMBOL, 0); }
 		public NotExpressionContext(ExpressionContext context) { CopyFrom(context); }
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterNotExpression(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitNotExpression(this);
-		}
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
@@ -64512,16 +59162,6 @@ public partial class MySqlParser : Parser {
 		}
 		public LogicalExpressionContext(ExpressionContext context) { CopyFrom(context); }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterLogicalExpression(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitLogicalExpression(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
 			if (typedVisitor != null) return typedVisitor.VisitLogicalExpression(this);
@@ -64533,16 +59173,6 @@ public partial class MySqlParser : Parser {
 			return GetRuleContext<PredicateContext>(0);
 		}
 		public PredicateExpressionContext(ExpressionContext context) { CopyFrom(context); }
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterPredicateExpression(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitPredicateExpression(this);
-		}
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
@@ -64694,16 +59324,6 @@ public partial class MySqlParser : Parser {
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode LIKE() { return GetToken(MySqlParser.LIKE, 0); }
 		public SoundsLikePredicateContext(PredicateContext context) { CopyFrom(context); }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterSoundsLikePredicate(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitSoundsLikePredicate(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
 			if (typedVisitor != null) return typedVisitor.VisitSoundsLikePredicate(this);
@@ -64717,16 +59337,6 @@ public partial class MySqlParser : Parser {
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode LOCAL_ID() { return GetToken(MySqlParser.LOCAL_ID, 0); }
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode VAR_ASSIGN() { return GetToken(MySqlParser.VAR_ASSIGN, 0); }
 		public ExpressionAtomPredicateContext(PredicateContext context) { CopyFrom(context); }
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterExpressionAtomPredicate(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitExpressionAtomPredicate(this);
-		}
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
@@ -64752,16 +59362,6 @@ public partial class MySqlParser : Parser {
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode SOME() { return GetToken(MySqlParser.SOME, 0); }
 		public SubqueryComparisonPredicateContext(PredicateContext context) { CopyFrom(context); }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterSubqueryComparisonPredicate(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitSubqueryComparisonPredicate(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
 			if (typedVisitor != null) return typedVisitor.VisitSubqueryComparisonPredicate(this);
@@ -64780,16 +59380,6 @@ public partial class MySqlParser : Parser {
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode LR_BRACKET() { return GetToken(MySqlParser.LR_BRACKET, 0); }
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode RR_BRACKET() { return GetToken(MySqlParser.RR_BRACKET, 0); }
 		public JsonMemberOfPredicateContext(PredicateContext context) { CopyFrom(context); }
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterJsonMemberOfPredicate(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitJsonMemberOfPredicate(this);
-		}
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
@@ -64810,16 +59400,6 @@ public partial class MySqlParser : Parser {
 			return GetRuleContext<PredicateContext>(i);
 		}
 		public BinaryComparisonPredicateContext(PredicateContext context) { CopyFrom(context); }
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterBinaryComparisonPredicate(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitBinaryComparisonPredicate(this);
-		}
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
@@ -64843,16 +59423,6 @@ public partial class MySqlParser : Parser {
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode NOT() { return GetToken(MySqlParser.NOT, 0); }
 		public InPredicateContext(PredicateContext context) { CopyFrom(context); }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterInPredicate(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitInPredicate(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
 			if (typedVisitor != null) return typedVisitor.VisitInPredicate(this);
@@ -64871,16 +59441,6 @@ public partial class MySqlParser : Parser {
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode NOT() { return GetToken(MySqlParser.NOT, 0); }
 		public BetweenPredicateContext(PredicateContext context) { CopyFrom(context); }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterBetweenPredicate(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitBetweenPredicate(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
 			if (typedVisitor != null) return typedVisitor.VisitBetweenPredicate(this);
@@ -64896,16 +59456,6 @@ public partial class MySqlParser : Parser {
 			return GetRuleContext<NullNotnullContext>(0);
 		}
 		public IsNullPredicateContext(PredicateContext context) { CopyFrom(context); }
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterIsNullPredicate(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitIsNullPredicate(this);
-		}
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
@@ -64926,16 +59476,6 @@ public partial class MySqlParser : Parser {
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode STRING_LITERAL() { return GetToken(MySqlParser.STRING_LITERAL, 0); }
 		public LikePredicateContext(PredicateContext context) { CopyFrom(context); }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterLikePredicate(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitLikePredicate(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
 			if (typedVisitor != null) return typedVisitor.VisitLikePredicate(this);
@@ -64954,16 +59494,6 @@ public partial class MySqlParser : Parser {
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode RLIKE() { return GetToken(MySqlParser.RLIKE, 0); }
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode NOT() { return GetToken(MySqlParser.NOT, 0); }
 		public RegexpPredicateContext(PredicateContext context) { CopyFrom(context); }
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterRegexpPredicate(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitRegexpPredicate(this);
-		}
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
@@ -65276,16 +59806,6 @@ public partial class MySqlParser : Parser {
 		}
 		public UnaryExpressionAtomContext(ExpressionAtomContext context) { CopyFrom(context); }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterUnaryExpressionAtom(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitUnaryExpressionAtom(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
 			if (typedVisitor != null) return typedVisitor.VisitUnaryExpressionAtom(this);
@@ -65302,16 +59822,6 @@ public partial class MySqlParser : Parser {
 		}
 		public CollateExpressionAtomContext(ExpressionAtomContext context) { CopyFrom(context); }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterCollateExpressionAtom(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitCollateExpressionAtom(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
 			if (typedVisitor != null) return typedVisitor.VisitCollateExpressionAtom(this);
@@ -65323,16 +59833,6 @@ public partial class MySqlParser : Parser {
 			return GetRuleContext<MysqlVariableContext>(0);
 		}
 		public MysqlVariableExpressionAtomContext(ExpressionAtomContext context) { CopyFrom(context); }
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterMysqlVariableExpressionAtom(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitMysqlVariableExpressionAtom(this);
-		}
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
@@ -65354,16 +59854,6 @@ public partial class MySqlParser : Parser {
 			return GetToken(MySqlParser.COMMA, i);
 		}
 		public NestedExpressionAtomContext(ExpressionAtomContext context) { CopyFrom(context); }
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterNestedExpressionAtom(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitNestedExpressionAtom(this);
-		}
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
@@ -65387,16 +59877,6 @@ public partial class MySqlParser : Parser {
 		}
 		public NestedRowExpressionAtomContext(ExpressionAtomContext context) { CopyFrom(context); }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterNestedRowExpressionAtom(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitNestedRowExpressionAtom(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
 			if (typedVisitor != null) return typedVisitor.VisitNestedRowExpressionAtom(this);
@@ -65417,16 +59897,6 @@ public partial class MySqlParser : Parser {
 		}
 		public MathExpressionAtomContext(ExpressionAtomContext context) { CopyFrom(context); }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterMathExpressionAtom(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitMathExpressionAtom(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
 			if (typedVisitor != null) return typedVisitor.VisitMathExpressionAtom(this);
@@ -65441,16 +59911,6 @@ public partial class MySqlParser : Parser {
 		}
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode RR_BRACKET() { return GetToken(MySqlParser.RR_BRACKET, 0); }
 		public ExistsExpressionAtomContext(ExpressionAtomContext context) { CopyFrom(context); }
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterExistsExpressionAtom(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitExistsExpressionAtom(this);
-		}
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
@@ -65467,16 +59927,6 @@ public partial class MySqlParser : Parser {
 			return GetRuleContext<IntervalTypeContext>(0);
 		}
 		public IntervalExpressionAtomContext(ExpressionAtomContext context) { CopyFrom(context); }
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterIntervalExpressionAtom(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitIntervalExpressionAtom(this);
-		}
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
@@ -65498,16 +59948,6 @@ public partial class MySqlParser : Parser {
 		}
 		public JsonExpressionAtomContext(ExpressionAtomContext context) { CopyFrom(context); }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterJsonExpressionAtom(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitJsonExpressionAtom(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
 			if (typedVisitor != null) return typedVisitor.VisitJsonExpressionAtom(this);
@@ -65522,16 +59962,6 @@ public partial class MySqlParser : Parser {
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode RR_BRACKET() { return GetToken(MySqlParser.RR_BRACKET, 0); }
 		public SubqueryExpressionAtomContext(ExpressionAtomContext context) { CopyFrom(context); }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterSubqueryExpressionAtom(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitSubqueryExpressionAtom(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
 			if (typedVisitor != null) return typedVisitor.VisitSubqueryExpressionAtom(this);
@@ -65544,16 +59974,6 @@ public partial class MySqlParser : Parser {
 		}
 		public ConstantExpressionAtomContext(ExpressionAtomContext context) { CopyFrom(context); }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterConstantExpressionAtom(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitConstantExpressionAtom(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
 			if (typedVisitor != null) return typedVisitor.VisitConstantExpressionAtom(this);
@@ -65565,16 +59985,6 @@ public partial class MySqlParser : Parser {
 			return GetRuleContext<FunctionCallContext>(0);
 		}
 		public FunctionCallExpressionAtomContext(ExpressionAtomContext context) { CopyFrom(context); }
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterFunctionCallExpressionAtom(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitFunctionCallExpressionAtom(this);
-		}
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
@@ -65589,16 +59999,6 @@ public partial class MySqlParser : Parser {
 		}
 		public BinaryExpressionAtomContext(ExpressionAtomContext context) { CopyFrom(context); }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterBinaryExpressionAtom(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitBinaryExpressionAtom(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
 			if (typedVisitor != null) return typedVisitor.VisitBinaryExpressionAtom(this);
@@ -65610,16 +60010,6 @@ public partial class MySqlParser : Parser {
 			return GetRuleContext<FullColumnNameContext>(0);
 		}
 		public FullColumnNameExpressionAtomContext(ExpressionAtomContext context) { CopyFrom(context); }
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterFullColumnNameExpressionAtom(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitFullColumnNameExpressionAtom(this);
-		}
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
@@ -65640,16 +60030,6 @@ public partial class MySqlParser : Parser {
 			return GetRuleContext<ExpressionAtomContext>(i);
 		}
 		public BitExpressionAtomContext(ExpressionAtomContext context) { CopyFrom(context); }
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterBitExpressionAtom(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitBitExpressionAtom(this);
-		}
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
@@ -65935,16 +60315,6 @@ public partial class MySqlParser : Parser {
 		}
 		public override int RuleIndex { get { return RULE_unaryOperator; } }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterUnaryOperator(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitUnaryOperator(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
 			if (typedVisitor != null) return typedVisitor.VisitUnaryOperator(this);
@@ -65992,16 +60362,6 @@ public partial class MySqlParser : Parser {
 		{
 		}
 		public override int RuleIndex { get { return RULE_comparisonOperator; } }
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterComparisonOperator(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitComparisonOperator(this);
-		}
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
@@ -66117,16 +60477,6 @@ public partial class MySqlParser : Parser {
 		}
 		public override int RuleIndex { get { return RULE_logicalOperator; } }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterLogicalOperator(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitLogicalOperator(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
 			if (typedVisitor != null) return typedVisitor.VisitLogicalOperator(this);
@@ -66214,16 +60564,6 @@ public partial class MySqlParser : Parser {
 		}
 		public override int RuleIndex { get { return RULE_bitOperator; } }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterBitOperator(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitBitOperator(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
 			if (typedVisitor != null) return typedVisitor.VisitBitOperator(this);
@@ -66307,16 +60647,6 @@ public partial class MySqlParser : Parser {
 		}
 		public override int RuleIndex { get { return RULE_mathOperator; } }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterMathOperator(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitMathOperator(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
 			if (typedVisitor != null) return typedVisitor.VisitMathOperator(this);
@@ -66365,16 +60695,6 @@ public partial class MySqlParser : Parser {
 		{
 		}
 		public override int RuleIndex { get { return RULE_jsonOperator; } }
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterJsonOperator(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitJsonOperator(this);
-		}
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
@@ -66473,16 +60793,6 @@ public partial class MySqlParser : Parser {
 		}
 		public override int RuleIndex { get { return RULE_charsetNameBase; } }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterCharsetNameBase(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitCharsetNameBase(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
 			if (typedVisitor != null) return typedVisitor.VisitCharsetNameBase(this);
@@ -66530,16 +60840,6 @@ public partial class MySqlParser : Parser {
 		{
 		}
 		public override int RuleIndex { get { return RULE_transactionLevelBase; } }
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterTransactionLevelBase(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitTransactionLevelBase(this);
-		}
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
@@ -66594,16 +60894,6 @@ public partial class MySqlParser : Parser {
 		}
 		public override int RuleIndex { get { return RULE_privilegesBase; } }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterPrivilegesBase(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitPrivilegesBase(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
 			if (typedVisitor != null) return typedVisitor.VisitPrivilegesBase(this);
@@ -66656,16 +60946,6 @@ public partial class MySqlParser : Parser {
 		}
 		public override int RuleIndex { get { return RULE_intervalTypeBase; } }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterIntervalTypeBase(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitIntervalTypeBase(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
 			if (typedVisitor != null) return typedVisitor.VisitIntervalTypeBase(this);
@@ -66716,16 +60996,6 @@ public partial class MySqlParser : Parser {
 		{
 		}
 		public override int RuleIndex { get { return RULE_dataTypeBase; } }
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterDataTypeBase(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitDataTypeBase(this);
-		}
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
@@ -67158,16 +61428,6 @@ public partial class MySqlParser : Parser {
 		}
 		public override int RuleIndex { get { return RULE_keywordsCanBeId; } }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterKeywordsCanBeId(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitKeywordsCanBeId(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;
 			if (typedVisitor != null) return typedVisitor.VisitKeywordsCanBeId(this);
@@ -67573,16 +61833,6 @@ public partial class MySqlParser : Parser {
 		{
 		}
 		public override int RuleIndex { get { return RULE_functionNameBase; } }
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.EnterFunctionNameBase(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IMySqlParserListener typedListener = listener as IMySqlParserListener;
-			if (typedListener != null) typedListener.ExitFunctionNameBase(this);
-		}
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IMySqlParserVisitor<TResult> typedVisitor = visitor as IMySqlParserVisitor<TResult>;

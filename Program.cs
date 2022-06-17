@@ -23,7 +23,6 @@ namespace TestAntlr
             CommonTokenStream tokenSteam = new CommonTokenStream(lexer);
             var mysqlParser = new MySqlParser(tokenSteam);
             var data = mysqlParser.root();
-
             Console.WriteLine(data.ToStringTree(mysqlParser));
             Console.WriteLine("ok");
             Console.WriteLine("Hello World!");
