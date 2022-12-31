@@ -1,6 +1,7 @@
 ﻿using Antlr4.Runtime;
 using System;
-using TestAntlr.Parser;
+using TestAntlr.MySql;
+using TestAntlr.SqlServer;
 
 namespace TestAntlr
 {
@@ -8,24 +9,32 @@ namespace TestAntlr
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("MySql");
+            TestMySql();
+            Console.WriteLine("SqlServer");
+            TestSqlServer();
+            Console.WriteLine("ok");
+            Console.ReadLine();
+        }
+        static void TestMySql()
+        {
             var sql = "SELECT a from t WHERE `id`='am' and m in ('aaa','ssss')";
-
-
-            //ICharStream charStream = CharStreams.fromString(sql);
-            //var lexer1 = new SQLiteLexer(charStream);
-            //ITokenStream stream = new CommonTokenStream(lexer1);
-            //SQLiteParser parser = new SQLiteParser(stream);
-            //parser.BuildParseTree = true;
-            //ParseContext tree = parser.parse();
-            //var lines = tree.sql_stmt_list();
-            ICharStream charStream= CharStreams.fromString(sql);
+            ICharStream charStream = CharStreams.fromString(sql);
             MySqlLexer lexer = new MySqlLexer(charStream);
             CommonTokenStream tokenSteam = new CommonTokenStream(lexer);
             var mysqlParser = new MySqlParser(tokenSteam);
             var data = mysqlParser.root();
             Console.WriteLine(data.ToStringTree(mysqlParser));
-            Console.WriteLine("ok");
-            Console.WriteLine("Hello World!");
+        }
+        static void TestSqlServer()
+        {
+            var sql = "SELECT a from d..t WHERE id='am' and m in ('aaa','ssss')";
+            ICharStream charStream = CharStreams.fromString(sql);
+            TSqlLexer lexer = new TSqlLexer(charStream);
+            CommonTokenStream tokenSteam = new CommonTokenStream(lexer);
+            var sqlParser = new TSqlParser(tokenSteam);
+            var data = sqlParser.tsql_file();
+            Console.WriteLine(data.ToStringTree(sqlParser));
         }
     }
 }

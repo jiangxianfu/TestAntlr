@@ -1,1 +1,0 @@
-java -Xmx1024m -jar antlr-4.10.1-complete.jar -Dlanguage=CSharp -no-listener -visitor -o ../Parser -package TestAntlr.Parser MySqlLexer.g4 MySqlParser.g4
